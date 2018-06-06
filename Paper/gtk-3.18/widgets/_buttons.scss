@@ -423,19 +423,11 @@ toolbar.inline-toolbar toolbutton:backdrop {
 %linked {
   @extend %linked_middle;
 
-  &:first-child {
-    border-top-left-radius: 3px;
-    border-bottom-left-radius: 3px;
-  }
-
   &:last-child {
-    border-top-right-radius: 3px;
-    border-bottom-right-radius: 3px;
     border-right-style: solid;
   }
 
   &:only-child {
-    border-radius: 3px;
     border-style: solid;
   }
 }

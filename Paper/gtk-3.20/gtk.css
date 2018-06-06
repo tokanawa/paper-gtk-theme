@@ -1341,26 +1341,16 @@ entry, .linked > combobox > box > button.combo:dir(ltr), .linked > combobox > bo
   border-right-style: none; }
 
 .inline-toolbar
-button:first-child, .linked >
-button:first-child, toolbar.inline-toolbar toolbutton:first-child > button.flat,
-toolbar.inline-toolbar toolbutton:backdrop:first-child > button.flat, combobox.linked button:nth-child(2):dir(rtl), .linked:not(.vertical) > combobox:first-child > box > button.combo, .linked:not(.vertical) > spinbutton:first-child:not(.vertical), GeditWindow.linked:not(.vertical) > .entry:first-child, .linked:not(.vertical) >
-entry:first-child {
-  border-top-left-radius: 3px;
-  border-bottom-left-radius: 3px; }
-.inline-toolbar
 button:last-child, .linked >
 button:last-child, toolbar.inline-toolbar toolbutton:last-child > button.flat,
 toolbar.inline-toolbar toolbutton:backdrop:last-child > button.flat, combobox.linked button:nth-child(2):dir(ltr), .linked:not(.vertical) > combobox:last-child > box > button.combo, .linked:not(.vertical) > spinbutton:last-child:not(.vertical), GeditWindow.linked:not(.vertical) > .entry:last-child, .linked:not(.vertical) >
 entry:last-child {
-  border-top-right-radius: 3px;
-  border-bottom-right-radius: 3px;
   border-right-style: solid; }
 .inline-toolbar
 button:only-child, .linked >
 button:only-child, toolbar.inline-toolbar toolbutton:only-child > button.flat,
 toolbar.inline-toolbar toolbutton:backdrop:only-child > button.flat, .linked:not(.vertical) > combobox:only-child > box > button.combo, .linked:not(.vertical) > spinbutton:only-child:not(.vertical), GeditWindow.linked:not(.vertical) > .entry:only-child, .linked:not(.vertical) >
 entry:only-child {
-  border-radius: 3px;
   border-style: solid; }
 
 .linked.vertical >
@@ -2866,13 +2856,11 @@ headerbar {
   border: none;
   border-radius: 4px 4px 0 0;
   background-color: #546e7a;
-  color: #ffffff;
-  box-shadow: inset 0 1px rgba(255, 255, 255, 0.2); }
+  color: #ffffff; }
   .titlebar:backdrop:not(headerbar),
   headerbar:backdrop {
     background-color: #546e7a;
     color: rgba(255, 255, 255, 0.5);
-    box-shadow: inset 0 1px rgba(255, 255, 255, 0);
     transition: 200ms ease-out; }
   .titlebar:not(headerbar) .title,
   headerbar .title {
@@ -3930,8 +3918,7 @@ notebook,
  *********/
 .paned,
 paned {
-  border: solid #c4c4c4;
-  border-left-width: 1px; }
+  border: solid #c4c4c4; }
   .paned > separator,
   paned > separator {
     min-width: 1px;
@@ -5501,7 +5488,7 @@ switch {
  * Toolbars *
  ************/
 toolbar {
-  padding: 0px;
+  padding: 5px;
   background-color: #546e7a;
   color: #ffffff; }
   toolbar:backdrop {

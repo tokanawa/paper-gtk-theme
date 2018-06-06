@@ -28,7 +28,7 @@
 
 /* Main Colors*/
 .toolbar {
-    padding: 0px;
+    padding: 5px;
     color: @text;
     background-color: @background;
     box-shadow: none;

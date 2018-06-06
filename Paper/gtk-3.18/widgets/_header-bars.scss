@@ -11,13 +11,9 @@
   background-color: $headerbar_bg_color;
   color: $headerbar_fg_color;
 
-  box-shadow: inset 0 1px $top_highlight;
-
   &:backdrop {
     background-color: $headerbar_bg_color;
     color: $backdrop_headerbar_fg_color;
-
-    box-shadow: inset 0 1px transparentize($top_highlight, 0.4);
 
     transition: $backdrop_transition;
   }
