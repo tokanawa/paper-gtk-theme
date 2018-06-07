@@ -56,7 +56,7 @@
 .notebook.header.frame.left:backdrop {
     /*border-top: 1px solid @border;
     border-bottom: 1px solid @border;
-    border-left: 1px solid @border;*/    
+    border-left: 1px solid @border;*/
     border:none;
 }
 
@@ -64,7 +64,7 @@
 .notebook.header.frame.right:backdrop {
     /*border-top: 1px solid @border;
     border-bottom: 1px solid @border;
-    border-right: 1px solid @border;*/    
+    border-right: 1px solid @border;*/
     border:none;
 }
 

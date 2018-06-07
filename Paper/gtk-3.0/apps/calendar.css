@@ -46,7 +46,7 @@ CaliforniaHostMainWindow GtkSwitch.trough:active {
 
 CaliforniaHostMainWindow GtkSwitch.slider:active {
     border: 1px solid shade(@calendar, 0.8);
-} 
+}
 
 CaliforniaHostMainWindow .header-bar GtkSwitch.slider:active:backdrop,
 CaliforniaHostMainWindow .header-bar GtkSwitch.slider:backdrop {

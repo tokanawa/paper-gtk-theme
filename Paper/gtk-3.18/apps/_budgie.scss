@@ -108,7 +108,7 @@ $pos_list: ((top, bottom),(bottom,top),(left,right),(right,left));
 
   // Menu
   BudgieMenuApplet {
-    font: bold;
+    font-weight: bold;
     .label {
       color: $budgie_panel_fg_color;
       icon-shadow: 0 1px $icon_shadow_color;
@@ -118,8 +118,7 @@ $pos_list: ((top, bottom),(bottom,top),(left,right),(right,left));
 
   // Clock
   ClockApplet {
-    font: monospace bold;
-    font-size: 90%;
+    font: bold 90% monospace;
     .label {
       color: $budgie_panel_fg_color;
       icon-shadow: 0 1px $icon_shadow_color;
@@ -181,7 +180,7 @@ $pos_list: ((top, bottom),(bottom,top),(left,right),(right,left));
 
   .raven-header {
     padding: 4px;
-    font: bold;
+    font-weight: bold;
     text-shadow: 0 1px $text_shadow_color;
     icon-shadow: 0 1px $icon_shadow_color;
     background-color: $bg_color;

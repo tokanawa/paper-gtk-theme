@@ -47,7 +47,7 @@ MathButtons .button.image-button {
     background-image: none;
     border: none;
     color: @calculator;
-    font: Bold;
+    font-weight: bold;
 }
 
 
@@ -57,7 +57,7 @@ MathButtons GtkComboBox * {
     background-image: none;
     border: none;
     color: @calculator;
-    font: Bold;
+    font-weight: bold;
 }
 
 MathButtons GtkComboBox:focus,

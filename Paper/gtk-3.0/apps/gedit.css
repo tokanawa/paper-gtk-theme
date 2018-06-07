@@ -44,7 +44,7 @@ GeditWindow GtkSwitch.trough:active {
 
 GeditWindow GtkSwitch.slider:active {
     border: 1px solid shade(@gedit, 0.8);
-} 
+}
 
 GeditWindow .header-bar GtkSwitch.slider:active:backdrop,
 GeditWindow .header-bar GtkSwitch.slider:backdrop {
@@ -80,7 +80,7 @@ GeditWindow .dynamic-notebook tab.right:active {
 /************
  * Etc etc. *
  ************/
- 
+
 GeditPanel .toolbar {
     border-style: none;
     background: none;

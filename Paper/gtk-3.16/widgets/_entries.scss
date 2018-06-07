@@ -11,7 +11,7 @@
     transition: all 200ms $ease-out-quad;
 
     @include entry(normal);
-    
+
     // icons inside the entry
     GtkImage {
       color: mix($fg_color, $base_color, 80%);

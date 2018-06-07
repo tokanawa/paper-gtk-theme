@@ -34,7 +34,7 @@ XfceHeading,
 .xfce4-panel {
     background-color: @panel_bg_color;
     color: @panel_fg_color;
-    font: normal;
+    font-weight: normal;
 }
 
 .xfce4-panel .button {

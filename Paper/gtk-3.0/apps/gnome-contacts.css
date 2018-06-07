@@ -45,7 +45,7 @@ ContactsWindow GtkSwitch.trough:active {
 
 ContactsWindow GtkSwitch.slider:active {
     border: 1px solid shade(@gnomeContacts, 0.8);
-} 
+}
 
 ContactsWindow .header-bar GtkSwitch.slider:active:backdrop,
 ContactsWindow .header-bar GtkSwitch.slider:backdrop {

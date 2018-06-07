@@ -107,7 +107,7 @@ PanelToplevel .launcher:active {
 /* Top launchers */
 .top .launcher:hover {
     border: 2px solid alpha(white, 0.0);
-    border-top: 2px solid alpha(white, 0.5); 
+    border-top: 2px solid alpha(white, 0.5);
 }
 .top .launcher:active {
     border: 2px solid alpha(white, 0.0);

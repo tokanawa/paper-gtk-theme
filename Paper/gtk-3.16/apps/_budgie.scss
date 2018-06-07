@@ -50,7 +50,7 @@ $asset_suffix: if($variant == 'default', '', '-hc');
 
 // Panel
 .budgie-panel {
-  font: bold;
+  font-weight: bold;
   color: $panel_fg_color;
   background-color: $panel_bg_color;
 

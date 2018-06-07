@@ -88,7 +88,7 @@
 
     .maximized {
       padding: 6px;
-      border-radius:0;  
+      border-radius:0;
     }
 
     &:backdrop {
@@ -202,7 +202,7 @@
         color: $backdrop_headerbar_fg_color;
       }
 
-      &:hover { 
+      &:hover {
         background-image:none;
         background-color: transparentize(black, 0.85);
         color:lighten($headerbar_fg_color, 10%);
@@ -223,7 +223,7 @@
     }
 
     &:focus,
-    &:hover { 
+    &:hover {
       background-image:none;
       background-color: transparentize(black, 0.85);
       color:lighten($headerbar_fg_color, 10%);
@@ -247,7 +247,7 @@
 
       text-shadow: none;
       icon-shadow: none;
-      
+
       box-shadow: inset 0 -2px 0 0 $headerbar_fg_color;
 
       background-color: transparent;
@@ -263,7 +263,7 @@
       }
 
       &:focus,
-      &:hover { 
+      &:hover {
         background-image:none;
         background-color: transparentize(black, 0.85);
         color:lighten($headerbar_fg_color, 10%);

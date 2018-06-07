@@ -90,7 +90,7 @@ GtkOverlay.osd {
 }
 
 .osd .button:hover,
-.osd .button:active:hover 
+.osd .button:active:hover
 .osd.toolbar .button:hover,
 .osd.toolbar .button:active:hover,
 .osd.toolbar .button.image-button:hover,

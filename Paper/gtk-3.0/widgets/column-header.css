@@ -55,7 +55,7 @@ column-header:last-child .button:backdrop:hover,
 /* Normal */
 column-header .button,
 .content-view column-header .button {
-    background-image: linear-gradient(to bottom, 
+    background-image: linear-gradient(to bottom,
                                       @button_background,
                                       shade(@button_background, 0.98)
                                       );
@@ -73,7 +73,7 @@ column-header .button:focus,
 column-header .button:active,
 .content-view column-header .button:focus,
 .content-view column-header .button:active {
-    background-image: linear-gradient(to bottom, 
+    background-image: linear-gradient(to bottom,
                                       @button_background,
                                       shade(@button_background, 0.98)
                                       );
@@ -111,7 +111,7 @@ column-header .button:backdrop GtkLabel {
 
 /* Hover */
 column-header .button:hover {
-    background-image: linear-gradient(to bottom, 
+    background-image: linear-gradient(to bottom,
                                       shade(@button_background, 1.2),
                                       shade(shade(@button_background, 1.2), 0.98)
                                       );
@@ -127,7 +127,7 @@ column-header .button:hover GtkLabel {
 
 /* Hover:Backdrop; */
 column-header .button:hover:backdrop {
-    background-image: linear-gradient(to bottom, 
+    background-image: linear-gradient(to bottom,
                                       shade(@backdrop_button_background, 1.1),
                                       shade(shade(@backdrop_button_background, 1.1), 0.98)
                                       );

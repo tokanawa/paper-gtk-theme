@@ -41,7 +41,7 @@
 
 /* Doesn't work despite the unique app name */
 
-gnomemusic+window+Window .titlebar, 
+gnomemusic+window+Window .titlebar,
 gnomemusic+window+Window .header-bar {
     background-color: @gnomeMusic;
 }
@@ -166,7 +166,7 @@ gnomemusic+window+Window .header-bar:backdrop {
 .music-albuminfo-album {
     font-size: 14px;
     font-weight: bold;
-    color: mix (@foreground, @background, 0.50);    
+    color: mix (@foreground, @background, 0.50);
 }
 
 .content-view { background-color: @background; }

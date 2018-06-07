@@ -19,16 +19,16 @@
 /*********
  * text *
  *********/
-.h1 { font: 24; }
-.h2 { font: 18; }
-.h3 { font: 12; }
+.h1 { font-size: 24px; }
+.h2 { font-size: 18px; }
+.h3 { font-size: 12px; }
 
 
 /*************
  * assistant *
  *************/
 GtkAssistant .sidebar .highlight {
-    font: bold;
+    font-weight: bold;
 }
 
 GtkAssistant .sidebar {

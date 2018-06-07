@@ -28,11 +28,11 @@ GraniteWidgetsPopOver {
     -GraniteWidgetsPopOver-border-radius: 8px;
     -GraniteWidgetsPopOver-border-width: 0;
     -GraniteWidgetsPopOver-shadow-size: 12;
-    
+
     border: 1px solid @base;
     background: @base;
     color: @text;
-    
+
 }
 
 GraniteWidgetsPopOver .frame,

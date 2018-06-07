@@ -41,7 +41,7 @@ echo -e "\033[1;31m$@\033[0m"
 
 function continue {
 echo
-show_question '\tDo you want to continue? (Y)es, (N)o : ' 
+show_question '\tDo you want to continue? (Y)es, (N)o : '
 echo
 read INPUT
 case $INPUT in
@@ -55,7 +55,7 @@ function main {
 if [ "$UID" -eq "$ROOT_UID" ]; then
 	if [ -d /usr/share/themes/Paper ]; then
 		echo
-		show_question '\tFound an existing installation. Replace it? (Y)es, (N)o : ' 
+		show_question '\tFound an existing installation. Replace it? (Y)es, (N)o : '
 		echo
 		read INPUT
 		case $INPUT in
@@ -73,7 +73,7 @@ if [ "$UID" -eq "$ROOT_UID" ]; then
 elif [ "$UID" -ne "$ROOT_UID" ]; then
 	if [ -d $HOME/.local/share/themes/Paper ]; then
 		echo
-		show_question '\tFound an existing installation. Replace it? (Y)es, (N)o : ' 
+		show_question '\tFound an existing installation. Replace it? (Y)es, (N)o : '
 		echo
 		read INPUT
 		case $INPUT in
@@ -98,7 +98,7 @@ fi
 
 function set {
 echo
-show_question '\tDo you want to set Paper as desktop theme? (Y)es, (N)o : ' 
+show_question '\tDo you want to set Paper as desktop theme? (Y)es, (N)o : '
 echo
 read INPUT
 case $INPUT in
@@ -119,7 +119,7 @@ setthemegnome
 }
 
 function setthemegnome {
-if [ -d /usr/share/gnome-shell/extensions/user-theme@gnome-shell-extensions.gcampax.github.com/ ]; then	
+if [ -d /usr/share/gnome-shell/extensions/user-theme@gnome-shell-extensions.gcampax.github.com/ ]; then
 	echo
 	show_question '\tWould you like to use Paper as your GNOME Shell theme? (Y)es, (N)o : '
 	echo

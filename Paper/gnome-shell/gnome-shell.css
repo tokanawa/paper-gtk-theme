@@ -28,7 +28,7 @@ stage {
   border: none;
   margin-top: 0.5em;
   padding: 4px 32px;
-  color: #dbdee0;  
+  color: #dbdee0;
   font-weight: bold;
   background-color: rgba(255,255,255,0.0);
   background-gradient-direction: none;
@@ -1972,7 +1972,7 @@ StScrollBar {
   border: none;
   margin-top: 0.5em;
   padding: 4px 32px;
-  color: #dbdee0;  
+  color: #dbdee0;
   font-weight: bold;
   background-gradient-direction: none;
   background-gradient-start: rgba(255,255,255,0);

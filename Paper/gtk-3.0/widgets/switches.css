@@ -28,7 +28,7 @@
  *************/
 
 GtkSwitch {
-    font: 1;
+    font-size: 1px;
     /*min-height: 24px;
     min-width: 24px; FIXME: Uncomment for 3.19 */
     -GtkSwitch-slider-width: 20;

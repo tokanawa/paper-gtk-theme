@@ -31,7 +31,7 @@
 .button.destructive-action {
     border: 1px solid @destructive_action_button_border;
     background-color: @destructive_action_button;
-    background-image: linear-gradient(to bottom, 
+    background-image: linear-gradient(to bottom,
                                       @destructive_action_button,
                                       shade(@destructive_action_button, 0.98)
                                       );
@@ -42,7 +42,7 @@
 .button.destructive-action:hover {
     border: 1px solid shade(@destructive_action_button_border, 1.1);
     background-color: shade(@destructive_action_button, 1.1);
-    background-image: linear-gradient(to bottom, 
+    background-image: linear-gradient(to bottom,
                                       shade(@destructive_action_button, 1.1),
                                       shade(shade(@destructive_action_button, 1.1), 0.98)
                                       );
@@ -53,7 +53,7 @@
 .button.destructive-action:active {
     border: 1px solid @destructive_action_button_border;
     background-color: @destructive_action_button;
-    background-image: linear-gradient(to bottom, 
+    background-image: linear-gradient(to bottom,
                                       @destructive_action_button,
                                       shade(@destructive_action_button, 0.98)
                                       );

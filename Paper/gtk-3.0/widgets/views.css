@@ -183,14 +183,14 @@ GtkIconView.view {
     border: solid @selection;
     color: @foreground;
 }
- 
+
 GtkIconView.view.cell:hover {
     border: 1px solid @selection;
     border-radius: 6px;
     background-color: alpha(@selection,0.4);
     color: @selection;
 }
- 
+
 GtkIconView.view.cell:selected,
 GtkIconView.view.cell:selected:focus {
     border: 1px solid shade(@selection, 0.8);
@@ -275,7 +275,7 @@ GtkIconView.content-view.check:selected {
 .content-view .option-description {
     color: alpha(@foreground, 0.7);
     text-shadow: 0 1px alpha(#fff, 0.4);
-} 
+}
 
 /* Drawing area */
 GtkDrawingArea {

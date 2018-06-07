@@ -44,7 +44,7 @@ FrWindow GtkSwitch.trough:active {
 
 FrWindow GtkSwitch.slider:active {
     border: 1px solid shade(@archives, 0.8);
-} 
+}
 
 FrWindow .header-bar GtkSwitch.slider:active:backdrop,
 FrWindow .header-bar GtkSwitch.slider:backdrop {

@@ -24,7 +24,7 @@
 .gala-workspaces-background {
     border-top: 1px solid alpha(#fff, 0.15);
     background-color: #444;
-    
+
     background-image: linear-gradient(to bottom,
                                   alpha(#000, 0.30),
                                   transparent 6px
@@ -142,7 +142,7 @@
 .app:focus {
     /*background-color: alpha(#000, 0.20);*/
 }
- 
+
 .search-item {
     border-radius: 0;
     border: none;
@@ -156,19 +156,19 @@
     background-color: alpha(@selection, 0.7);
     color: @selection_foreground;
 }
-  
+
 
 .search-entry-large,
 .search-entry-large:focus {
     border: none;
-    font: 18;
+    font-size: 18px;
     font-weight: 300;
     background-image: none;
     background: none;
     box-shadow: none;
     border-radius: 0;
 }
- 
+
 .search-category-header {
     font-weight: bold;
     color: @foreground;

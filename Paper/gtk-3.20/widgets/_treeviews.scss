@@ -48,7 +48,7 @@ treeview.view {
     border-left-color: mix($backdrop_fg_color, $backdrop_bg_color, 50%);
     border-top: $backdrop_bg_color;
   }
-  
+
   &:drop(active) {
     border-style: solid none;
     border-width: 1px;
@@ -135,7 +135,7 @@ treeview.view {
 
 
   // progress bar trough in treeviews
-  &.trough { 
+  &.trough {
     background-color: transparentize($fg_color,0.9);
     border-radius: 4px;
 
@@ -194,7 +194,7 @@ treeview.view {
   .button.dnd,
   button.dnd,
   column-header.button.dnd,
-  header.button.dnd { 
+  header.button.dnd {
     &:active, &:selected, &:hover, & {
       padding: 4px 6px;
       transition: none;

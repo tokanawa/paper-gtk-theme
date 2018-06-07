@@ -102,7 +102,7 @@
     border-image: none;
     border-style: none;
     background: none;
-    background-image: linear-gradient(to top, 
+    background-image: linear-gradient(to top,
                                       transparent 2px,
                                       @base 2px,
                                       @base 3px,
@@ -115,7 +115,7 @@
 
 .entry.progressbar.pulse,
 .entry.progressbar.pulse:focus {
-    background-image: linear-gradient(to top, 
+    background-image: linear-gradient(to top,
                                       transparent 2px,
                                       @base 2px,
                                       @base 3px,
@@ -129,7 +129,7 @@
     border-image: none;
     border-style: none;
     background:none;
-    background-image: linear-gradient(to top, 
+    background-image: linear-gradient(to top,
                                       transparent 2px,
                                       @base 2px,
                                       @base 3px,

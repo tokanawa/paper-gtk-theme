@@ -61,7 +61,7 @@
 .info,
 GtkInfoBar {
     background-color: @background;
-    background-image: linear-gradient(to bottom, 
+    background-image: linear-gradient(to bottom,
                                       @background,
                                       shade(@background, 0.98)
                                       );

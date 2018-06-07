@@ -203,7 +203,7 @@ MathWindow {
       border: none;
       text-shadow: none;
       color: $gnome_calculator;
-      font: bold;
+      font-weight: bold;
 
       &:hover {
         background-image: none;
@@ -224,7 +224,7 @@ MathWindow {
 
         &:backdrop {
           background-color: darken($gnome_calculator,10%);
-          color: transparentize($base_color, 0.5);  
+          color: transparentize($base_color, 0.5);
         }
       }
     }

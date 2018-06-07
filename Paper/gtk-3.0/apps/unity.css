@@ -93,7 +93,7 @@ UnityDecoration.right {
     background-color: shade(@unity, 0.6);
     background-size: 1px 120px;
     background-clip: border-box;
-    background-image: linear-gradient(to bottom, 
+    background-image: linear-gradient(to bottom,
                                       @unity,
                                       shade(@unity, 0.6)
                                       );

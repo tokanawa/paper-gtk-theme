@@ -44,7 +44,7 @@ ScratchMainWindow GtkSwitch.trough:active {
 
 ScratchMainWindow GtkSwitch.slider:active {
     border: 1px solid shade(@scratch, 0.8);
-} 
+}
 
 ScratchMainWindow .header-bar GtkSwitch.slider:active:backdrop,
 ScratchMainWindow .header-bar GtkSwitch.slider:backdrop {

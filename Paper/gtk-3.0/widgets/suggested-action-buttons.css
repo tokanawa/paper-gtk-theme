@@ -30,7 +30,7 @@
 .button.suggested-action {
     border: 1px solid @suggested_action_button_border;
     background-color: @suggested_action_button;
-    background-image: linear-gradient(to bottom, 
+    background-image: linear-gradient(to bottom,
                                       @suggested_action_button,
                                       shade(@suggested_action_button, 0.98)
                                       );
@@ -41,7 +41,7 @@
 .button.suggested-action:hover {
     border: 1px solid shade(@suggested_action_button_border, 1.1);
     background-color: shade(@suggested_action_button, 1.2);
-    background-image: linear-gradient(to bottom, 
+    background-image: linear-gradient(to bottom,
                                       shade(@suggested_action_button, 1.1),
                                       shade(shade(@suggested_action_button, 1.1), 0.98)
                                       );
@@ -52,7 +52,7 @@
 .button.suggested-action:active {
     border: 1px solid shade(@suggested_action_button, 1.1);
     background-color: shade(@suggested_action_button, 1.1);
-    background-image: linear-gradient(to bottom, 
+    background-image: linear-gradient(to bottom,
                                       @suggested_action_button,
                                       shade(@suggested_action_button, 0.98)
                                       );

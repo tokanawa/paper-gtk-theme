@@ -183,7 +183,7 @@ OsScrollbar {
   &:backdrop,
   &:active:backdrop {
     background-color: $backdrop_fg_color;
-  } 
+  }
 
   &:insensitive {
     background-color: $insensitive_fg_color;

@@ -44,7 +44,7 @@ PhotosMainWindow GtkSwitch.trough:active {
 
 PhotosMainWindow GtkSwitch.slider:active {
     border: 1px solid shade(@photos, 0.8);
-} 
+}
 
 PhotosMainWindow .header-bar GtkSwitch.slider:active:backdrop,
 PhotosMainWindow .header-bar GtkSwitch.slider:backdrop {

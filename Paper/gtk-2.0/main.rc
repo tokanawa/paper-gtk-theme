@@ -803,9 +803,9 @@ style "default" {
       border   = {  3,3,3,3 }
       stretch  = TRUE
       gap_side = LEFT
-    }  
+    }
 
-    # Up 
+    # Up
 
     image {
       function = EXTENSION

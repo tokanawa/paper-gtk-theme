@@ -104,7 +104,7 @@
     background-size: contain;
     background: none;
     color: @base;
-    font: bold;
+    font-weight: bold;
 }
 
 .documents-favorite.button:active,

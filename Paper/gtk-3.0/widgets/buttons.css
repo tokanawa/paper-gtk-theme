@@ -24,7 +24,7 @@
 /***********
  * Buttons *
  ***********/
- 
+
 .button,
 .button.text-button,
 .button.image-button {
@@ -32,7 +32,7 @@
     padding: 4px 9px;
     border: 1px solid @button_border;
     background-color: @button_background;
-    background-image: linear-gradient(to bottom, 
+    background-image: linear-gradient(to bottom,
                                       @button_background,
                                       shade(@button_background, 0.98)
                                       );
@@ -85,7 +85,7 @@ GtkCalendar.button:backdrop:hover,
 .button.image-button:focus {
     border: 1px solid @selection;
     background-color: shade(@selection, 1.1);
-    background-image: linear-gradient(to bottom, 
+    background-image: linear-gradient(to bottom,
                                       shade(@selection, 1.1),
                                       shade(shade(@selection, 1.1), 0.98)
                                       );
@@ -100,7 +100,7 @@ GtkCalendar.button:backdrop:hover,
 .button.image-button:hover {
     border: 1px solid @selection;
     background-color: shade(@selection, 1.2);
-    background-image: linear-gradient(to bottom, 
+    background-image: linear-gradient(to bottom,
                                       shade(@selection, 1.2),
                                       shade(shade(@selection, 1.2), 0.98)
                                       );
@@ -114,7 +114,7 @@ GtkCalendar.button:backdrop:hover,
 .button.image-button:active {
     border: 1px solid @selection;
     background-color: shade(@selection, 1.1);
-    background-image: linear-gradient(to top, 
+    background-image: linear-gradient(to top,
                                       shade(@selection, 1.1),
                                       shade(shade(@selection, 1.1), 0.95)
                                       );
@@ -150,7 +150,7 @@ GtkCalendar.button:backdrop:hover,
 .button.text-button:backdrop:hover,
 .button.image-button:backdrop:hover {
     background-color: shade(@backdrop_button_background, 1.1);
-    background-image: linear-gradient(to bottom, 
+    background-image: linear-gradient(to bottom,
                                       shade(@backdrop_button_background, 1.1),
                                       shade(shade(@backdrop_button_background, 1.1), 0.98)
                                       );
@@ -186,7 +186,7 @@ GtkCalendar.button:backdrop:hover,
 }
 
 
-/*************************** 
+/***************************
 * Overlay Button *
 ***************************/
 

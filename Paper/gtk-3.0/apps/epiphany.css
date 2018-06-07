@@ -44,7 +44,7 @@ EphyWindow GtkSwitch.trough:active {
 
 EphyWindow GtkSwitch.slider:active {
     border: 1px solid shade(@epiphany, 0.8);
-} 
+}
 
 EphyWindow .header-bar GtkSwitch.slider:active:backdrop,
 EphyWindow .header-bar GtkSwitch.slider:backdrop {

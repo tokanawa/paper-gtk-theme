@@ -62,7 +62,7 @@ GtkLevelBar.vertical {
   }
 
   // Fill block
-  &.fill-block { 
+  &.fill-block {
     @extend %fill-block;
   }
 
@@ -73,7 +73,7 @@ GtkLevelBar.vertical {
     }
   }
 
-  // Discrete  
+  // Discrete
   &.horizontal.indicator-discrete.fill-block { margin: 0 1px; }
   &.horizontal.discrete block { margin: 0 1px; }
 

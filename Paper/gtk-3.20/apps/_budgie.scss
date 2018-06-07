@@ -102,7 +102,7 @@ $asset_suffix: if($variant == 'default', '', '-hc');
 
   // Menu
   BudgieMenuApplet {
-    font: bold;
+    font-weight: bold;
     .label {
       color: $budgie_panel_fg_color;
       text-shadow: 0 1px $shadow_color;
@@ -111,8 +111,7 @@ $asset_suffix: if($variant == 'default', '', '-hc');
 
   // Clock
   ClockApplet {
-    font: monospace bold;
-    font-size: 90%;
+    font: bold 90% monospace;
     .label {
       color: $budgie_panel_fg_color;
       text-shadow: 0 1px $shadow_color;
@@ -165,7 +164,7 @@ $asset_suffix: if($variant == 'default', '', '-hc');
 
   .raven-header {
     padding: 4px;
-    font: bold;
+    font-weight: bold;
     text-shadow: 0 1px $shadow_color;
     icon-shadow: 0 1px $shadow_color;
     background-color: $bg_color;
