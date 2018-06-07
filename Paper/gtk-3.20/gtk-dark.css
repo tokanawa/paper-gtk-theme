@@ -3194,7 +3194,7 @@ headerbar {
       border-radius: 50%;
       border: none;
       box-shadow: none;
-      icon-shadow: none;
+      -gtk-icon-shadow: none;
       margin: 0;
       padding: 1px;
       text-shadow: none;
@@ -6345,7 +6345,7 @@ decoration {
     padding: 4px;
     font-weight: bold;
     text-shadow: 0 1px rgba(0, 0, 0, 0.2);
-    icon-shadow: 0 1px rgba(0, 0, 0, 0.2);
+    -gtk-icon-shadow: 0 1px rgba(0, 0, 0, 0.2);
     background-color: #37474f;
     background-image: linear-gradient(to bottom, #41555e, #37474f);
     color: #cfd8dc;
@@ -6395,7 +6395,7 @@ decoration {
 
 .raven-mpris {
   text-shadow: 0 1px rgba(0, 0, 0, 0.2);
-  icon-shadow: 0 1px rgba(0, 0, 0, 0.2);
+  -gtk-icon-shadow: 0 1px rgba(0, 0, 0, 0.2);
   color: #cfd8dc;
   background-color: rgba(38, 50, 56, 0.8);
   border: solid rgba(0, 0, 0, 0.2);
