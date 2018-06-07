@@ -365,7 +365,7 @@ scale {
     min-width: 0;
 
     trough {
-      background-image: linear-gradient(to top, $borders_color);
+      background-image: linear-gradient(to top, $borders_color, transparent);
       background-repeat: no-repeat;
     }
 

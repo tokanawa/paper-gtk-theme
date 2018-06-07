@@ -101,11 +101,11 @@
     &:not(:insensitive) + entry:not(:insensitive),
     &:not(:insensitive) + %entry:not(:insensitive) {
       border-top-color: mix($borders_color, $base_color, 30%);
-      background-image: linear-gradient(to bottom, $base_color);
+      background-image: linear-gradient(to bottom, $base_color, transparent);
 
       &:backdrop {
         border-top-color: mix($backdrop_borders_color, $backdrop_base_color, 30%);
-        background-image: linear-gradient(to bottom, $backdrop_base_color);
+        background-image: linear-gradient(to bottom, $backdrop_base_color, transparent);
       }
     }
 

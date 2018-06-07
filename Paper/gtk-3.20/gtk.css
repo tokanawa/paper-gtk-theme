@@ -450,7 +450,7 @@ button {
   button:backdrop.flat,
   button:backdrop {
     border-color: #c9c9c9;
-    background-image: linear-gradient(to bottom, #f7f7f7);
+    background-image: linear-gradient(to bottom, #f7f7f7, transparent);
     text-shadow: none;
     -gtk-icon-shadow: none;
     box-shadow: inset 0 1px rgba(255, 255, 255, 0);
@@ -620,7 +620,7 @@ button.osd {
   outline-color: rgba(207, 216, 220, 0.3);
   color: #cfd8dc;
   border-color: rgba(0, 0, 0, 0.7);
-  background-image: linear-gradient(to bottom, rgba(32, 37, 38, 0.8));
+  background-image: linear-gradient(to bottom, rgba(32, 37, 38, 0.8), transparent);
   background-clip: padding-box;
   box-shadow: inset 0 1px rgba(255, 255, 255, 0.1);
   text-shadow: 0 1px black;
@@ -633,7 +633,7 @@ button.osd {
   button.osd:hover {
     color: white;
     border-color: rgba(0, 0, 0, 0.7);
-    background-image: linear-gradient(to bottom, rgba(60, 69, 71, 0.8));
+    background-image: linear-gradient(to bottom, rgba(60, 69, 71, 0.8), transparent);
     background-clip: padding-box;
     box-shadow: inset 0 1px rgba(255, 255, 255, 0.1);
     text-shadow: 0 1px black;
@@ -645,7 +645,7 @@ button.osd {
   button.osd:checked {
     color: white;
     border-color: rgba(0, 0, 0, 0.7);
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7));
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), transparent);
     background-clip: padding-box;
     box-shadow: none;
     text-shadow: none;
@@ -657,7 +657,7 @@ button.osd {
   button.osd:disabled {
     color: #787f81;
     border-color: rgba(0, 0, 0, 0.7);
-    background-image: linear-gradient(to bottom, rgba(50, 55, 56, 0.5));
+    background-image: linear-gradient(to bottom, rgba(50, 55, 56, 0.5), transparent);
     background-clip: padding-box;
     box-shadow: none;
     text-shadow: none;
@@ -666,7 +666,7 @@ button.osd {
   button.osd:backdrop {
     color: #cfd8dc;
     border-color: rgba(0, 0, 0, 0.7);
-    background-image: linear-gradient(to bottom, rgba(32, 37, 38, 0.8));
+    background-image: linear-gradient(to bottom, rgba(32, 37, 38, 0.8), transparent);
     background-clip: padding-box;
     box-shadow: none;
     text-shadow: none;
@@ -678,7 +678,7 @@ button.osd {
 button {
   color: #cfd8dc;
   border-color: rgba(0, 0, 0, 0.7);
-  background-image: linear-gradient(to bottom, rgba(32, 37, 38, 0.8));
+  background-image: linear-gradient(to bottom, rgba(32, 37, 38, 0.8), transparent);
   background-clip: padding-box;
   box-shadow: inset 0 1px rgba(255, 255, 255, 0.1);
   text-shadow: 0 1px black;
@@ -688,7 +688,7 @@ button {
   button:hover {
     color: white;
     border-color: rgba(0, 0, 0, 0.7);
-    background-image: linear-gradient(to bottom, rgba(60, 69, 71, 0.8));
+    background-image: linear-gradient(to bottom, rgba(60, 69, 71, 0.8), transparent);
     background-clip: padding-box;
     box-shadow: inset 0 1px rgba(255, 255, 255, 0.1);
     text-shadow: 0 1px black;
@@ -701,7 +701,7 @@ button {
   button:checked {
     color: white;
     border-color: rgba(0, 0, 0, 0.7);
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7));
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), transparent);
     background-clip: padding-box;
     box-shadow: none;
     text-shadow: none;
@@ -712,7 +712,7 @@ button {
   button:disabled {
     color: #787f81;
     border-color: rgba(0, 0, 0, 0.7);
-    background-image: linear-gradient(to bottom, rgba(50, 55, 56, 0.5));
+    background-image: linear-gradient(to bottom, rgba(50, 55, 56, 0.5), transparent);
     background-clip: padding-box;
     box-shadow: none;
     text-shadow: none;
@@ -721,7 +721,7 @@ button {
   button:backdrop {
     color: #cfd8dc;
     border-color: rgba(0, 0, 0, 0.7);
-    background-image: linear-gradient(to bottom, rgba(32, 37, 38, 0.8));
+    background-image: linear-gradient(to bottom, rgba(32, 37, 38, 0.8), transparent);
     background-clip: padding-box;
     box-shadow: none;
     text-shadow: none;
@@ -741,7 +741,7 @@ button {
     button.flat:hover {
       color: white;
       border-color: rgba(0, 0, 0, 0.7);
-      background-image: linear-gradient(to bottom, rgba(60, 69, 71, 0.8));
+      background-image: linear-gradient(to bottom, rgba(60, 69, 71, 0.8), transparent);
       background-clip: padding-box;
       box-shadow: inset 0 1px rgba(255, 255, 255, 0.1);
       text-shadow: 0 1px black;
@@ -751,7 +751,7 @@ button {
     button.flat:disabled {
       color: #787f81;
       border-color: rgba(0, 0, 0, 0.7);
-      background-image: linear-gradient(to bottom, rgba(50, 55, 56, 0.5));
+      background-image: linear-gradient(to bottom, rgba(50, 55, 56, 0.5), transparent);
       background-clip: padding-box;
       box-shadow: none;
       text-shadow: none;
@@ -772,7 +772,7 @@ button {
     button.flat:checked {
       color: white;
       border-color: rgba(0, 0, 0, 0.7);
-      background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7));
+      background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), transparent);
       background-clip: padding-box;
       box-shadow: none;
       text-shadow: none;
@@ -816,7 +816,7 @@ button.suggested-action {
   button.suggested-action:backdrop,
   button.suggested-action.flat:backdrop {
     border-color: #0c7cd5;
-    background-image: linear-gradient(to bottom, #0c7cd5);
+    background-image: linear-gradient(to bottom, #0c7cd5, transparent);
     text-shadow: none;
     -gtk-icon-shadow: none;
     box-shadow: inset 0 1px rgba(255, 255, 255, 0); }
@@ -930,7 +930,7 @@ button.suggested-action {
   button.suggested-action {
     color: #cfd8dc;
     border-color: rgba(0, 0, 0, 0.7);
-    background-image: linear-gradient(to bottom, rgba(12, 124, 213, 0.5));
+    background-image: linear-gradient(to bottom, rgba(12, 124, 213, 0.5), transparent);
     background-clip: padding-box;
     box-shadow: inset 0 1px rgba(255, 255, 255, 0.1);
     text-shadow: 0 1px black;
@@ -940,7 +940,7 @@ button.suggested-action {
     button.suggested-action:hover {
       color: white;
       border-color: rgba(0, 0, 0, 0.7);
-      background-image: linear-gradient(to bottom, rgba(12, 124, 213, 0.7));
+      background-image: linear-gradient(to bottom, rgba(12, 124, 213, 0.7), transparent);
       background-clip: padding-box;
       box-shadow: inset 0 1px rgba(255, 255, 255, 0.1);
       text-shadow: 0 1px black;
@@ -953,7 +953,7 @@ button.suggested-action {
     button.suggested-action:checked {
       color: white;
       border-color: rgba(0, 0, 0, 0.7);
-      background-image: linear-gradient(to bottom, #0c7cd5);
+      background-image: linear-gradient(to bottom, #0c7cd5, transparent);
       background-clip: padding-box;
       box-shadow: none;
       text-shadow: none;
@@ -964,7 +964,7 @@ button.suggested-action {
     button.suggested-action:disabled {
       color: #787f81;
       border-color: rgba(0, 0, 0, 0.7);
-      background-image: linear-gradient(to bottom, rgba(50, 55, 56, 0.5));
+      background-image: linear-gradient(to bottom, rgba(50, 55, 56, 0.5), transparent);
       background-clip: padding-box;
       box-shadow: none;
       text-shadow: none;
@@ -973,7 +973,7 @@ button.suggested-action {
     button.suggested-action:backdrop {
       color: #cfd8dc;
       border-color: rgba(0, 0, 0, 0.7);
-      background-image: linear-gradient(to bottom, rgba(12, 124, 213, 0.5));
+      background-image: linear-gradient(to bottom, rgba(12, 124, 213, 0.5), transparent);
       background-clip: padding-box;
       box-shadow: none;
       text-shadow: none;
@@ -1016,7 +1016,7 @@ button.destructive-action {
   button.destructive-action:backdrop,
   button.destructive-action.flat:backdrop {
     border-color: #d32f2f;
-    background-image: linear-gradient(to bottom, #d32f2f);
+    background-image: linear-gradient(to bottom, #d32f2f, transparent);
     text-shadow: none;
     -gtk-icon-shadow: none;
     box-shadow: inset 0 1px rgba(255, 255, 255, 0); }
@@ -1130,7 +1130,7 @@ button.destructive-action {
   button.destructive-action {
     color: #cfd8dc;
     border-color: rgba(0, 0, 0, 0.7);
-    background-image: linear-gradient(to bottom, rgba(211, 47, 47, 0.5));
+    background-image: linear-gradient(to bottom, rgba(211, 47, 47, 0.5), transparent);
     background-clip: padding-box;
     box-shadow: inset 0 1px rgba(255, 255, 255, 0.1);
     text-shadow: 0 1px black;
@@ -1140,7 +1140,7 @@ button.destructive-action {
     button.destructive-action:hover {
       color: white;
       border-color: rgba(0, 0, 0, 0.7);
-      background-image: linear-gradient(to bottom, rgba(211, 47, 47, 0.7));
+      background-image: linear-gradient(to bottom, rgba(211, 47, 47, 0.7), transparent);
       background-clip: padding-box;
       box-shadow: inset 0 1px rgba(255, 255, 255, 0.1);
       text-shadow: 0 1px black;
@@ -1153,7 +1153,7 @@ button.destructive-action {
     button.destructive-action:checked {
       color: white;
       border-color: rgba(0, 0, 0, 0.7);
-      background-image: linear-gradient(to bottom, #d32f2f);
+      background-image: linear-gradient(to bottom, #d32f2f, transparent);
       background-clip: padding-box;
       box-shadow: none;
       text-shadow: none;
@@ -1164,7 +1164,7 @@ button.destructive-action {
     button.destructive-action:disabled {
       color: #787f81;
       border-color: rgba(0, 0, 0, 0.7);
-      background-image: linear-gradient(to bottom, rgba(50, 55, 56, 0.5));
+      background-image: linear-gradient(to bottom, rgba(50, 55, 56, 0.5), transparent);
       background-clip: padding-box;
       box-shadow: none;
       text-shadow: none;
@@ -1173,7 +1173,7 @@ button.destructive-action {
     button.destructive-action:backdrop {
       color: #cfd8dc;
       border-color: rgba(0, 0, 0, 0.7);
-      background-image: linear-gradient(to bottom, rgba(211, 47, 47, 0.5));
+      background-image: linear-gradient(to bottom, rgba(211, 47, 47, 0.5), transparent);
       background-clip: padding-box;
       box-shadow: none;
       text-shadow: none;
@@ -1292,7 +1292,7 @@ stacksidebar row.needs-attention > label {
         color: #9e9e9e; }
   .inline-toolbar toolbutton > button:backdrop {
     border-color: #c9c9c9;
-    background-image: linear-gradient(to bottom, #f7f7f7);
+    background-image: linear-gradient(to bottom, #f7f7f7, transparent);
     text-shadow: none;
     -gtk-icon-shadow: none;
     box-shadow: inset 0 1px rgba(255, 255, 255, 0); }
@@ -2090,7 +2090,7 @@ colorswatch#add-color-button {
       box-shadow: inset 0 1px white; }
     colorswatch#add-color-button overlay:backdrop {
       border-color: #c9c9c9;
-      background-image: linear-gradient(to bottom, #f7f7f7);
+      background-image: linear-gradient(to bottom, #f7f7f7, transparent);
       text-shadow: none;
       -gtk-icon-shadow: none;
       box-shadow: inset 0 1px rgba(255, 255, 255, 0); }
@@ -2251,20 +2251,20 @@ entry {
   entry:disabled {
     color: #9e9e9e;
     border-color: #c4c4c4;
-    background-image: linear-gradient(to bottom, #fafafa);
+    background-image: linear-gradient(to bottom, #fafafa, transparent);
     box-shadow: none; }
   spinbutton:backdrop:not(.vertical), GeditWindow > .entry:backdrop,
   entry:backdrop {
     color: dimgray;
     border-color: #c9c9c9;
-    background-image: linear-gradient(to bottom, #fcfcfc);
+    background-image: linear-gradient(to bottom, #fcfcfc, transparent);
     box-shadow: none;
     transition: 200ms ease-out; }
   spinbutton:backdrop:disabled:not(.vertical), GeditWindow > .entry:backdrop:disabled,
   entry:backdrop:disabled {
     color: #d1d1d1;
     border-color: #c9c9c9;
-    background-image: linear-gradient(to bottom, #fafafa);
+    background-image: linear-gradient(to bottom, #fafafa, transparent);
     box-shadow: none; }
   spinbutton.error:not(.vertical), GeditWindow > .error.entry,
   entry.error {
@@ -2311,7 +2311,7 @@ entry {
   entry {
     color: white;
     border-color: rgba(0, 0, 0, 0.7);
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5));
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), transparent);
     background-clip: padding-box;
     box-shadow: none;
     text-shadow: 0 1px black;
@@ -2320,7 +2320,7 @@ entry {
     entry:focus {
       color: white;
       border-color: #0c7cd5;
-      background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5));
+      background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), transparent);
       background-clip: padding-box;
       box-shadow: inset 0 1px 2px 0 rgba(0, 0, 0, 0.05), inset 0 1px 1px 0 rgba(0, 0, 0, 0.1);
       text-shadow: 0 1px black;
@@ -2329,7 +2329,7 @@ entry {
     entry:backdrop {
       color: white;
       border-color: rgba(0, 0, 0, 0.7);
-      background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5));
+      background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), transparent);
       background-clip: padding-box;
       box-shadow: none;
       text-shadow: none;
@@ -2338,7 +2338,7 @@ entry {
     entry:disabled {
       color: #787f81;
       border-color: rgba(0, 0, 0, 0.7);
-      background-image: linear-gradient(to bottom, rgba(50, 55, 56, 0.5));
+      background-image: linear-gradient(to bottom, rgba(50, 55, 56, 0.5), transparent);
       background-clip: padding-box;
       box-shadow: none;
       text-shadow: none;
@@ -2378,12 +2378,12 @@ entry {
 entry:not(:disabled) + entry:not(:disabled), .linked.vertical >
 entry:not(:disabled) + spinbutton:not(:disabled):not(.vertical), GeditWindow.linked.vertical > entry:not(:disabled) + .entry:not(:disabled) {
   border-top-color: #ededed;
-  background-image: linear-gradient(to bottom, #ffffff); }
+  background-image: linear-gradient(to bottom, #ffffff, transparent); }
   .linked.vertical > spinbutton:not(:disabled):not(.vertical) + entry:not(:disabled):backdrop, GeditWindow.linked.vertical > .entry:not(:disabled) + entry:not(:disabled):backdrop, .linked.vertical > spinbutton:not(:disabled):not(.vertical) + spinbutton:not(:disabled):backdrop:not(.vertical), GeditWindow.linked.vertical > .entry:not(:disabled) + spinbutton:not(:disabled):backdrop:not(.vertical), GeditWindow.linked.vertical > spinbutton:not(:disabled):not(.vertical) + .entry:not(:disabled):backdrop, GeditWindow.linked.vertical > .entry:not(:disabled) + .entry:not(:disabled):backdrop, .linked.vertical >
   entry:not(:disabled) + entry:not(:disabled):backdrop, .linked.vertical >
   entry:not(:disabled) + spinbutton:not(:disabled):backdrop:not(.vertical), GeditWindow.linked.vertical > entry:not(:disabled) + .entry:not(:disabled):backdrop {
     border-top-color: #ededed;
-    background-image: linear-gradient(to bottom, #fcfcfc); }
+    background-image: linear-gradient(to bottom, #fcfcfc, transparent); }
 .linked.vertical > spinbutton:disabled:not(.vertical) + entry:disabled, GeditWindow.linked.vertical > .entry:disabled + entry:disabled, .linked.vertical > spinbutton:disabled:not(.vertical) + entry:disabled, GeditWindow.linked.vertical > .entry:disabled + entry:disabled, .linked.vertical >
 entry:disabled + entry:disabled, .linked.vertical >
 entry:disabled + entry:disabled {
@@ -2894,7 +2894,7 @@ headerbar {
     headerbar.selection-mode .selection-menu:backdrop,
     headerbar.selection-mode .selection-menu {
       border-color: rgba(12, 124, 213, 0);
-      background-image: linear-gradient(to bottom, rgba(12, 124, 213, 0));
+      background-image: linear-gradient(to bottom, rgba(12, 124, 213, 0), transparent);
       box-shadow: none;
       text-shadow: none;
       padding-left: 10px;
@@ -4423,7 +4423,7 @@ scale {
     scale slider:backdrop {
       transition: 200ms ease-out;
       border-color: #c9c9c9;
-      background-image: linear-gradient(to bottom, #f7f7f7);
+      background-image: linear-gradient(to bottom, #f7f7f7, transparent);
       text-shadow: none;
       -gtk-icon-shadow: none;
       box-shadow: inset 0 1px rgba(255, 255, 255, 0); }
@@ -4447,7 +4447,7 @@ scale {
     .osd scale slider {
       color: #cfd8dc;
       border-color: rgba(0, 0, 0, 0.7);
-      background-image: linear-gradient(to bottom, rgba(32, 37, 38, 0.8));
+      background-image: linear-gradient(to bottom, rgba(32, 37, 38, 0.8), transparent);
       background-clip: padding-box;
       box-shadow: inset 0 1px rgba(255, 255, 255, 0.1);
       text-shadow: 0 1px black;
@@ -4458,7 +4458,7 @@ scale {
       .osd scale slider:hover {
         color: white;
         border-color: rgba(0, 0, 0, 0.7);
-        background-image: linear-gradient(to bottom, rgba(60, 69, 71, 0.8));
+        background-image: linear-gradient(to bottom, rgba(60, 69, 71, 0.8), transparent);
         background-clip: padding-box;
         box-shadow: inset 0 1px rgba(255, 255, 255, 0.1);
         text-shadow: 0 1px black;
@@ -4467,7 +4467,7 @@ scale {
       .osd scale slider:active {
         color: white;
         border-color: rgba(0, 0, 0, 0.7);
-        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7));
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), transparent);
         background-clip: padding-box;
         box-shadow: none;
         text-shadow: none;
@@ -4476,7 +4476,7 @@ scale {
       .osd scale slider:disabled {
         color: #787f81;
         border-color: rgba(0, 0, 0, 0.7);
-        background-image: linear-gradient(to bottom, rgba(50, 55, 56, 0.5));
+        background-image: linear-gradient(to bottom, rgba(50, 55, 56, 0.5), transparent);
         background-clip: padding-box;
         box-shadow: none;
         text-shadow: none;
@@ -4484,7 +4484,7 @@ scale {
       .osd scale slider:backdrop {
         color: #cfd8dc;
         border-color: rgba(0, 0, 0, 0.7);
-        background-image: linear-gradient(to bottom, rgba(32, 37, 38, 0.8));
+        background-image: linear-gradient(to bottom, rgba(32, 37, 38, 0.8), transparent);
         background-clip: padding-box;
         box-shadow: none;
         text-shadow: none;
@@ -4885,7 +4885,7 @@ scale {
     min-height: 0;
     min-width: 0; }
     scale.color trough {
-      background-image: linear-gradient(to top, #c4c4c4);
+      background-image: linear-gradient(to top, #c4c4c4, transparent);
       background-repeat: no-repeat; }
     scale.color.horizontal {
       padding: 0 0 15px 0; }
@@ -5349,7 +5349,7 @@ spinbutton.vertical button.down {
 .osd spinbutton.vertical button:first-child {
   color: #cfd8dc;
   border-color: rgba(0, 0, 0, 0.7);
-  background-image: linear-gradient(to bottom, rgba(32, 37, 38, 0.8));
+  background-image: linear-gradient(to bottom, rgba(32, 37, 38, 0.8), transparent);
   background-clip: padding-box;
   box-shadow: inset 0 1px rgba(255, 255, 255, 0.1);
   text-shadow: 0 1px black;
@@ -5358,7 +5358,7 @@ spinbutton.vertical button.down {
   .osd spinbutton.vertical button:first-child:hover {
     color: white;
     border-color: rgba(0, 0, 0, 0.7);
-    background-image: linear-gradient(to bottom, rgba(60, 69, 71, 0.8));
+    background-image: linear-gradient(to bottom, rgba(60, 69, 71, 0.8), transparent);
     background-clip: padding-box;
     box-shadow: inset 0 1px rgba(255, 255, 255, 0.1);
     text-shadow: 0 1px black;
@@ -5367,7 +5367,7 @@ spinbutton.vertical button.down {
   .osd spinbutton.vertical button:first-child:active {
     color: white;
     border-color: rgba(0, 0, 0, 0.7);
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7));
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), transparent);
     background-clip: padding-box;
     box-shadow: none;
     text-shadow: none;
@@ -5376,7 +5376,7 @@ spinbutton.vertical button.down {
   .osd spinbutton.vertical button:first-child:disabled {
     color: #787f81;
     border-color: rgba(0, 0, 0, 0.7);
-    background-image: linear-gradient(to bottom, rgba(50, 55, 56, 0.5));
+    background-image: linear-gradient(to bottom, rgba(50, 55, 56, 0.5), transparent);
     background-clip: padding-box;
     box-shadow: none;
     text-shadow: none;
@@ -5384,7 +5384,7 @@ spinbutton.vertical button.down {
   .osd spinbutton.vertical button:first-child:backdrop {
     color: #cfd8dc;
     border-color: rgba(0, 0, 0, 0.7);
-    background-image: linear-gradient(to bottom, rgba(32, 37, 38, 0.8));
+    background-image: linear-gradient(to bottom, rgba(32, 37, 38, 0.8), transparent);
     background-clip: padding-box;
     box-shadow: none;
     text-shadow: none;
@@ -7353,7 +7353,7 @@ ConversationListView {
 #buttonbox_frame button {
   color: #cfd8dc;
   border-color: rgba(0, 0, 0, 0.7);
-  background-image: linear-gradient(to bottom, rgba(32, 37, 38, 0.8));
+  background-image: linear-gradient(to bottom, rgba(32, 37, 38, 0.8), transparent);
   background-clip: padding-box;
   box-shadow: inset 0 1px rgba(255, 255, 255, 0.1);
   text-shadow: 0 1px black;
@@ -7362,7 +7362,7 @@ ConversationListView {
   #buttonbox_frame button:hover {
     color: white;
     border-color: rgba(0, 0, 0, 0.7);
-    background-image: linear-gradient(to bottom, rgba(60, 69, 71, 0.8));
+    background-image: linear-gradient(to bottom, rgba(60, 69, 71, 0.8), transparent);
     background-clip: padding-box;
     box-shadow: inset 0 1px rgba(255, 255, 255, 0.1);
     text-shadow: 0 1px black;
@@ -7371,7 +7371,7 @@ ConversationListView {
   #buttonbox_frame button:active, #buttonbox_frame button:checked {
     color: white;
     border-color: rgba(0, 0, 0, 0.7);
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7));
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), transparent);
     background-clip: padding-box;
     box-shadow: none;
     text-shadow: none;
@@ -7380,7 +7380,7 @@ ConversationListView {
   #buttonbox_frame button:disabled {
     color: #787f81;
     border-color: rgba(0, 0, 0, 0.7);
-    background-image: linear-gradient(to bottom, rgba(50, 55, 56, 0.5));
+    background-image: linear-gradient(to bottom, rgba(50, 55, 56, 0.5), transparent);
     background-clip: padding-box;
     box-shadow: none;
     text-shadow: none;

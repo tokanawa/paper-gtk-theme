@@ -61,7 +61,7 @@
     .selection-menu {
       &:backdrop, & {
         border-color: transparentize($selected_bg_color, 1);
-        background-image: linear-gradient(to bottom, transparentize($selected_bg_color, 1));
+        background-image: linear-gradient(to bottom, transparentize($selected_bg_color, 1), transparent);
         box-shadow: none;
         text-shadow: none;
         padding-left: 10px;

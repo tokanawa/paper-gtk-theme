@@ -188,13 +188,15 @@ ClocksWindow .clocks-laps-panel {
 
 ClocksWindow .clocks-laps-panel > .frame:dir(ltr) {
     border-image: linear-gradient(to bottom,
-                                  mix(@border,@background,0.5))
+                                  mix(@border,@background,0.5),
+                                  transparent)
                   0 0 0 1 / 20px 0px 20px 1px stretch;
 }
 
 ClocksWindow .clocks-laps-panel > .frame:dir(rtl) {
     border-image: linear-gradient(to bottom,
-                                  mix(@border,@background,0.5))
+                                  mix(@border,@background,0.5),
+                                  transparent)
                   0 1 0 0 / 20px 1px 20px 0px stretch;
 }
 
@@ -208,7 +210,8 @@ ClocksWindow .clocks-laps-panel .list-row {
     padding-right: 20px;
     font-size: 14px;
     border-image: linear-gradient(to bottom,
-                                  mix(@border,@background,0.5))
+                                  mix(@border,@background,0.5),
+                                  transparent)
                   0 0 1 0 / 0 20px 1px 20px stretch;
 }
 
