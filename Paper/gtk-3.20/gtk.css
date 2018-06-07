@@ -6361,7 +6361,7 @@ decoration {
     padding-right: 2px;
     border-color: rgba(38, 50, 56, 0); }
     .budgie-panel .launcher:hover {
-      -gtk-image-effect: highlight; }
+      -gtk-icon-effect: highlight; }
 
 .raven {
   color: #444;
