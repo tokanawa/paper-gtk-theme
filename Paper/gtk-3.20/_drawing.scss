@@ -86,7 +86,7 @@
   @if $t==osd {
     color: $osd_text_color;
     border-color: $osd_borders_color;
-    background-image: linear-gradient(to bottom, transparentize(opacify($osd_borders_color, 1), 0.5));
+    background-image: linear-gradient(to bottom, transparentize(opacify($osd_borders_color, 1), 0.5), transparent);
     background-clip: padding-box;
     box-shadow: none;
     text-shadow: 0 1px black;
@@ -95,7 +95,7 @@
   @if $t==osd-focus {
     color: $osd_text_color;
     border-color: $selected_bg_color;
-    background-image: linear-gradient(to bottom, transparentize(opacify($osd_borders_color, 1), 0.5));
+    background-image: linear-gradient(to bottom, transparentize(opacify($osd_borders_color, 1), 0.5), transparent);
     background-clip: padding-box;
     box-shadow: entry_focus_shadow($fc);
     text-shadow: 0 1px black;
@@ -113,7 +113,7 @@
   @if $t==osd-backdrop {
     color: $osd_text_color;
     border-color: $osd_borders_color;
-    background-image: linear-gradient(to bottom, transparentize(opacify($osd_borders_color, 1), 0.5));
+    background-image: linear-gradient(to bottom, transparentize(opacify($osd_borders_color, 1), 0.5), transparent);
     background-clip: padding-box;
     box-shadow: none;
     text-shadow: none;
