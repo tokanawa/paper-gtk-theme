@@ -6557,7 +6557,7 @@ NautilusCanvasView {
     .nautilus-desktop .nautilus-canvas-item:active {
       color: #444;
       text-shadow: none; }
-    .nautilus-desktop .nautilus-canvas-item:prelight {
+    .nautilus-desktop .nautilus-canvas-item:hover {
       color: #444;
       text-shadow: none; }
     .nautilus-desktop .nautilus-canvas-item:selected {
