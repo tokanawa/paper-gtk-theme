@@ -12,7 +12,6 @@ combobox {
   &.linked {
     button:nth-child(2) {
       &:dir(ltr) { @extend %linked:last-child; }
-      &:dir(rtl) { @extend %linked:first-child; }
     }
   }
 
@@ -32,7 +31,6 @@ combobox {
   &:dir(rtl) { @extend %linked_middle; } // specificity bump
 }
 
-.linked:not(.vertical) > combobox:first-child > box > button.combo { @extend %linked:first-child; }
 .linked:not(.vertical) > combobox:last-child > box > button.combo { @extend %linked:last-child; }
 .linked:not(.vertical) > combobox:only-child > box > button.combo { @extend %linked:only-child; }
 

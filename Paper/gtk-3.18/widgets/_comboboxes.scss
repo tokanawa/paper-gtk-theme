@@ -10,7 +10,6 @@ GtkComboBox {
   &.linked {
     .button:nth-child(2) {
       &:dir(ltr) { @extend %linked:last-child; }
-      &:dir(rtl) { @extend %linked:first-child; }
     }
   }
 }
@@ -24,7 +23,6 @@ GtkComboBox {
   &:dir(rtl) { @extend %linked_middle; } // specificity bump
 }
 
-.linked:not(.vertical) > GtkComboBox:first-child > box > button.combo { @extend %linked:first-child; }
 .linked:not(.vertical) > GtkComboBox:last-child > box > button.combo { @extend %linked:last-child; }
 .linked:not(.vertical) > GtkComboBox:only-child > box > button.combo { @extend %linked:only-child; }
 

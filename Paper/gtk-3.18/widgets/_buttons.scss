@@ -408,8 +408,6 @@ toolbar.inline-toolbar toolbutton,
 toolbar.inline-toolbar toolbutton:backdrop {
   > button.flat { @extend %linked_middle; }
 
-  &:first-child > button.flat { @extend %linked:first-child; }
-
   &:last-child > button.flat { @extend %linked:last-child; }
 
   &:only-child > button.flat { @extend %linked:only-child; }

@@ -60,7 +60,7 @@
 read if you used those and something break with a version upgrade you're on your own... */
 @define-color wm_title shade(#cfd8dc, 1.8);
 @define-color wm_unfocused_title #839096;
-@define-color wm_highlight transparent;
+@define-color wm_highlight rgba(0, 0, 0, 0);
 @define-color wm_borders_edge rgba(255, 255, 255, 0.1);
 @define-color wm_bg_a shade(#37474f, 1.2);
 @define-color wm_bg_b #37474f;
@@ -251,18 +251,14 @@ label.separator {
   GtkLabel.separator:backdrop,
   label.separator:backdrop {
     color: #839096; }
-GtkLabel selection,
-label selection {
+GtkLabel selection, label selection {
   background-color: #2196f3;
   color: #ffffff; }
-GtkLabel:disabled,
-label:disabled {
+GtkLabel:disabled, label:disabled {
   color: #839096; }
-  GtkLabel:disabled:backdrop,
-  label:disabled:backdrop {
+  GtkLabel:disabled:backdrop, label:disabled:backdrop {
     color: #56707c; }
-GtkLabel:backdrop,
-label:backdrop {
+GtkLabel:backdrop, label:backdrop {
   color: #839096; }
 
 .dim-label, GtkLabel.separator,
@@ -305,10 +301,8 @@ entry selection, row:selected, GtkTreeView.view:selected:focus, GtkTreeView.view
 treeview.view:selected:focus,
 treeview.view:selected {
   background-color: #2196f3; }
-  .list-row:selected GtkLabel, row:selected GtkLabel, GtkLabel:selected, .list-row:selected
-  label, row:selected
-  label,
-  label:selected, .view:selected:focus, GtkIconView:selected:focus,
+  .list-row:selected GtkLabel, row:selected GtkLabel, GtkLabel:selected,
+  .list-row:selected label, row:selected label, label:selected, .view:selected:focus, GtkIconView:selected:focus,
   iconview:selected:focus, .view:selected, GtkIconView:selected,
   iconview:selected,
   GtkTextView text:selected:focus,
@@ -327,10 +321,8 @@ treeview.view:selected {
   treeview.view:selected:focus,
   treeview.view:selected {
     color: #ffffff; }
-    .list-row:selected GtkLabel:disabled, row:selected GtkLabel:disabled, GtkLabel:disabled:selected, .list-row:selected
-    label:disabled, row:selected
-    label:disabled,
-    label:disabled:selected, GtkIconView:disabled:selected:focus,
+    .list-row:selected GtkLabel:disabled, row:selected GtkLabel:disabled, GtkLabel:disabled:selected,
+    .list-row:selected label:disabled, row:selected label:disabled, label:disabled:selected, GtkIconView:disabled:selected:focus,
     iconview:disabled:selected:focus, .view:disabled:selected, GtkIconView:disabled:selected,
     iconview:disabled:selected,
     GtkTextView text:disabled:selected:focus,
@@ -338,17 +330,14 @@ treeview.view:selected {
     GtkTextView text:disabled:selected,
     textview text:disabled:selected, GtkTextView text selection:disabled,
     textview text selection:disabled, GtkFlow flowboxchild:disabled:selected,
-    flowbox flowboxchild:disabled:selected, GtkLabel:disabled selection,
-    label:disabled selection, modelbutton.flat:disabled:selected, popover.background checkbutton:disabled:selected,
+    flowbox flowboxchild:disabled:selected, GtkLabel:disabled selection, label:disabled selection, modelbutton.flat:disabled:selected, popover.background checkbutton:disabled:selected,
     popover.background radiobutton:disabled:selected,
     .menuitem.button.flat:disabled:selected, calendar:disabled:selected, spinbutton:disabled:selected:not(.vertical), GeditWindow > .entry:disabled:selected,
     entry:disabled:selected, spinbutton:not(.vertical) selection:disabled, GeditWindow > .entry selection:disabled,
     entry selection:disabled, row:disabled:selected {
       color: #90cbf9; }
-    .list-row:selected GtkLabel:backdrop, row:selected GtkLabel:backdrop, GtkLabel:backdrop:selected, .list-row:selected
-    label:backdrop, row:selected
-    label:backdrop,
-    label:backdrop:selected, GtkIconView:backdrop:selected:focus,
+    .list-row:selected GtkLabel:backdrop, row:selected GtkLabel:backdrop, GtkLabel:backdrop:selected,
+    .list-row:selected label:backdrop, row:selected label:backdrop, label:backdrop:selected, GtkIconView:backdrop:selected:focus,
     iconview:backdrop:selected:focus, .view:backdrop:selected, GtkIconView:backdrop:selected,
     iconview:backdrop:selected,
     GtkTextView text:backdrop:selected:focus,
@@ -356,24 +345,19 @@ treeview.view:selected {
     GtkTextView text:backdrop:selected,
     textview text:backdrop:selected, GtkTextView text selection:backdrop,
     textview text selection:backdrop, GtkFlow flowboxchild:backdrop:selected,
-    flowbox flowboxchild:backdrop:selected, GtkLabel:backdrop selection,
-    label:backdrop selection, modelbutton.flat:backdrop:selected, popover.background checkbutton:backdrop:selected,
+    flowbox flowboxchild:backdrop:selected, GtkLabel:backdrop selection, label:backdrop selection, modelbutton.flat:backdrop:selected, popover.background checkbutton:backdrop:selected,
     popover.background radiobutton:backdrop:selected,
     .menuitem.button.flat:backdrop:selected, calendar:backdrop:selected, spinbutton:backdrop:selected:not(.vertical), GeditWindow > .entry:backdrop:selected,
     entry:backdrop:selected, spinbutton:not(.vertical) selection:backdrop, GeditWindow > .entry selection:backdrop,
     entry selection:backdrop, row:backdrop:selected {
       color: rgba(255, 255, 255, 0.5); }
-      .list-row:selected GtkLabel:backdrop:disabled, row:selected GtkLabel:backdrop:disabled, GtkLabel:backdrop:disabled:selected, .list-row:selected
-      label:backdrop:disabled, row:selected
-      label:backdrop:disabled,
-      label:backdrop:disabled:selected, .view:backdrop:disabled:selected, GtkIconView:backdrop:disabled:selected,
+      .list-row:selected GtkLabel:backdrop:disabled, row:selected GtkLabel:backdrop:disabled, GtkLabel:backdrop:disabled:selected,
+      .list-row:selected label:backdrop:disabled, row:selected label:backdrop:disabled, label:backdrop:disabled:selected, .view:backdrop:disabled:selected, GtkIconView:backdrop:disabled:selected,
       iconview:backdrop:disabled:selected,
       GtkTextView text:backdrop:disabled:selected,
       textview text:backdrop:disabled:selected, GtkTextView text selection:backdrop:disabled,
       textview text selection:backdrop:disabled, GtkFlow flowboxchild:backdrop:disabled:selected,
-      flowbox flowboxchild:backdrop:disabled:selected, GtkLabel:disabled selection:backdrop,
-      label:disabled selection:backdrop, GtkLabel:backdrop selection:disabled,
-      label:backdrop selection:disabled, modelbutton.flat:backdrop:disabled:selected, popover.background checkbutton:backdrop:disabled:selected,
+      flowbox flowboxchild:backdrop:disabled:selected, GtkLabel:disabled selection:backdrop, label:disabled selection:backdrop, GtkLabel:backdrop selection:disabled, label:backdrop selection:disabled, modelbutton.flat:backdrop:disabled:selected, popover.background checkbutton:backdrop:disabled:selected,
       popover.background radiobutton:backdrop:disabled:selected,
       .menuitem.button.flat:backdrop:disabled:selected, calendar:backdrop:disabled:selected, spinbutton:backdrop:disabled:selected:not(.vertical), GeditWindow > .entry:backdrop:disabled:selected,
       entry:backdrop:disabled:selected, spinbutton:not(.vertical) selection:backdrop:disabled, GeditWindow > .entry selection:backdrop:disabled,
@@ -403,8 +387,8 @@ button {
   outline-color: rgba(207, 216, 220, 0.3);
   border-color: #222c31;
   background-image: linear-gradient(to bottom, #37474f, #2d3940);
-  text-shadow: 0 1px rgba(0, 0, 0, 0.7898);
-  -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.7898);
+  text-shadow: 0 1px rgba(0, 0, 0, 0.7898039216);
+  -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.7898039216);
   box-shadow: inset 0 1px rgba(255, 255, 255, 0.05);
   box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.05); }
   button.sidebar-button, notebook > header > tabs > arrow,
@@ -429,8 +413,8 @@ button {
     outline-color: rgba(207, 216, 220, 0.3);
     border-color: #222c31;
     background-image: linear-gradient(to bottom, #394a52, #334249 60%, #2f3c43);
-    text-shadow: 0 1px rgba(0, 0, 0, 0.7418);
-    -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.7418);
+    text-shadow: 0 1px rgba(0, 0, 0, 0.7418039216);
+    -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.7418039216);
     box-shadow: inset 0 1px rgba(255, 255, 255, 0.05);
     -gtk-icon-effect: highlight; }
   notebook > header > tabs > arrow:active, notebook > header > tabs > arrow:checked,
@@ -440,8 +424,8 @@ button {
     outline-color: rgba(207, 216, 220, 0.3);
     border-color: #222c31;
     background-image: linear-gradient(to bottom, #28343a, #334249);
-    text-shadow: 0 1px rgba(0, 0, 0, 0.8698);
-    -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.8698);
+    text-shadow: 0 1px rgba(0, 0, 0, 0.8698039216);
+    -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.8698039216);
     box-shadow: inset 0 2px 1px -2px rgba(0, 0, 0, 0.6);
     box-shadow: inset 0 1px 1px 0 rgba(0, 0, 0, 0.05), 0 1px 0 0 rgba(255, 255, 255, 0.05);
     transition-duration: 50ms; }
@@ -601,12 +585,12 @@ button {
     color: #4e9a06;
     border-color: #4e9a06;
     box-shadow: inset 0 0 0 1px #4e9a06; }
-row:selected button.sidebar-button:not(:active):not(:checked):not(:hover):not(disabled), row:selected
-button.flat:not(:active):not(:checked):not(:hover):not(disabled) {
+row:selected button.sidebar-button:not(:active):not(:checked):not(:hover):not(disabled),
+row:selected button.flat:not(:active):not(:checked):not(:hover):not(disabled) {
   color: #ffffff;
   border-color: transparent; }
-  row:selected button.sidebar-button:not(:active):not(:checked):not(:hover):not(disabled):backdrop, row:selected
-  button.flat:not(:active):not(:checked):not(:hover):not(disabled):backdrop {
+  row:selected button.sidebar-button:not(:active):not(:checked):not(:hover):not(disabled):backdrop,
+  row:selected button.flat:not(:active):not(:checked):not(:hover):not(disabled):backdrop {
     color: #839096; }
 button.osd {
   min-width: 24px;
@@ -670,8 +654,8 @@ button.osd {
     border: none; }
 .app-notification .button, .app-notification button,
 .app-notification.frame .button,
-.app-notification.frame button, .csd popover.background.touch-selection button, .csd popover.background.magnifier button, popover.background.touch-selection button, popover.background.magnifier button, .osd
-button {
+.app-notification.frame button, .csd popover.background.touch-selection button, .csd popover.background.magnifier button, popover.background.touch-selection button, popover.background.magnifier button,
+.osd button {
   color: #cfd8dc;
   border-color: rgba(0, 0, 0, 0.7);
   background-image: linear-gradient(to bottom, rgba(32, 37, 38, 0.8), transparent);
@@ -680,8 +664,8 @@ button {
   text-shadow: 0 1px black;
   -gtk-icon-shadow: 0 1px black;
   outline-color: rgba(207, 216, 220, 0.3); }
-  .app-notification .button:hover, .app-notification button:hover, popover.background.touch-selection button:hover, popover.background.magnifier button:hover, .osd
-  button:hover {
+  .app-notification .button:hover, .app-notification button:hover, popover.background.touch-selection button:hover, popover.background.magnifier button:hover,
+  .osd button:hover {
     color: white;
     border-color: rgba(0, 0, 0, 0.7);
     background-image: linear-gradient(to bottom, rgba(60, 69, 71, 0.8), transparent);
@@ -690,11 +674,11 @@ button {
     text-shadow: 0 1px black;
     -gtk-icon-shadow: 0 1px black;
     outline-color: rgba(207, 216, 220, 0.3); }
-  .app-notification .button:active:backdrop, .app-notification button:active:backdrop, popover.background.touch-selection button:active:backdrop, popover.background.magnifier button:active:backdrop, .app-notification .button:active, .app-notification button:active, popover.background.touch-selection button:active, popover.background.magnifier button:active, .app-notification .button:checked:backdrop, .app-notification button:checked:backdrop, popover.background.touch-selection button:checked:backdrop, popover.background.magnifier button:checked:backdrop, .app-notification .button:checked, .app-notification button:checked, popover.background.touch-selection button:checked, popover.background.magnifier button:checked, .osd
-  button:active:backdrop, .osd
-  button:active, .osd
-  button:checked:backdrop, .osd
-  button:checked {
+  .app-notification .button:active:backdrop, .app-notification button:active:backdrop, popover.background.touch-selection button:active:backdrop, popover.background.magnifier button:active:backdrop, .app-notification .button:active, .app-notification button:active, popover.background.touch-selection button:active, popover.background.magnifier button:active, .app-notification .button:checked:backdrop, .app-notification button:checked:backdrop, popover.background.touch-selection button:checked:backdrop, popover.background.magnifier button:checked:backdrop, .app-notification .button:checked, .app-notification button:checked, popover.background.touch-selection button:checked, popover.background.magnifier button:checked,
+  .osd button:active:backdrop,
+  .osd button:active,
+  .osd button:checked:backdrop,
+  .osd button:checked {
     color: white;
     border-color: rgba(0, 0, 0, 0.7);
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), transparent);
@@ -703,9 +687,9 @@ button {
     text-shadow: none;
     -gtk-icon-shadow: none;
     outline-color: rgba(207, 216, 220, 0.3); }
-  .app-notification .button:disabled:backdrop, .app-notification button:disabled:backdrop, popover.background.touch-selection button:disabled:backdrop, popover.background.magnifier button:disabled:backdrop, .app-notification .button:disabled, .app-notification button:disabled, popover.background.touch-selection button:disabled, popover.background.magnifier button:disabled, .osd
-  button:disabled:backdrop, .osd
-  button:disabled {
+  .app-notification .button:disabled:backdrop, .app-notification button:disabled:backdrop, popover.background.touch-selection button:disabled:backdrop, popover.background.magnifier button:disabled:backdrop, .app-notification .button:disabled, .app-notification button:disabled, popover.background.touch-selection button:disabled, popover.background.magnifier button:disabled,
+  .osd button:disabled:backdrop,
+  .osd button:disabled {
     color: #787f81;
     border-color: rgba(0, 0, 0, 0.7);
     background-image: linear-gradient(to bottom, rgba(50, 55, 56, 0.5), transparent);
@@ -713,8 +697,8 @@ button {
     box-shadow: none;
     text-shadow: none;
     -gtk-icon-shadow: none; }
-  .app-notification .button:backdrop, .app-notification button:backdrop, popover.background.touch-selection button:backdrop, popover.background.magnifier button:backdrop, .osd
-  button:backdrop {
+  .app-notification .button:backdrop, .app-notification button:backdrop, popover.background.touch-selection button:backdrop, popover.background.magnifier button:backdrop,
+  .osd button:backdrop {
     color: #cfd8dc;
     border-color: rgba(0, 0, 0, 0.7);
     background-image: linear-gradient(to bottom, rgba(32, 37, 38, 0.8), transparent);
@@ -722,8 +706,8 @@ button {
     box-shadow: none;
     text-shadow: none;
     -gtk-icon-shadow: none; }
-  .app-notification .flat.button, .app-notification button.flat, popover.background.touch-selection button.flat, popover.background.magnifier button.flat, .osd
-  button.flat {
+  .app-notification .flat.button, .app-notification button.flat, popover.background.touch-selection button.flat, popover.background.magnifier button.flat,
+  .osd button.flat {
     border-color: transparent;
     background-color: transparent;
     background-image: none;
@@ -733,8 +717,8 @@ button {
     box-shadow: none;
     text-shadow: 0 1px black;
     -gtk-icon-shadow: 0 1px black; }
-    .app-notification .flat.button:hover, .app-notification button.flat:hover, popover.background.touch-selection button.flat:hover, popover.background.magnifier button.flat:hover, .osd
-    button.flat:hover {
+    .app-notification .flat.button:hover, .app-notification button.flat:hover, popover.background.touch-selection button.flat:hover, popover.background.magnifier button.flat:hover,
+    .osd button.flat:hover {
       color: white;
       border-color: rgba(0, 0, 0, 0.7);
       background-image: linear-gradient(to bottom, rgba(60, 69, 71, 0.8), transparent);
@@ -743,8 +727,8 @@ button {
       text-shadow: 0 1px black;
       -gtk-icon-shadow: 0 1px black;
       outline-color: rgba(207, 216, 220, 0.3); }
-    .app-notification .flat.button:disabled, .app-notification button.flat:disabled, popover.background.touch-selection button.flat:disabled, popover.background.magnifier button.flat:disabled, .osd
-    button.flat:disabled {
+    .app-notification .flat.button:disabled, .app-notification button.flat:disabled, popover.background.touch-selection button.flat:disabled, popover.background.magnifier button.flat:disabled,
+    .osd button.flat:disabled {
       color: #787f81;
       border-color: rgba(0, 0, 0, 0.7);
       background-image: linear-gradient(to bottom, rgba(50, 55, 56, 0.5), transparent);
@@ -755,17 +739,17 @@ button {
       background-image: none;
       border-color: transparent;
       box-shadow: none; }
-    .app-notification .flat.button:backdrop, .app-notification button.flat:backdrop, popover.background.touch-selection button.flat:backdrop, popover.background.magnifier button.flat:backdrop, .osd
-    button.flat:backdrop {
+    .app-notification .flat.button:backdrop, .app-notification button.flat:backdrop, popover.background.touch-selection button.flat:backdrop, popover.background.magnifier button.flat:backdrop,
+    .osd button.flat:backdrop {
       border-color: transparent;
       background-color: transparent;
       background-image: none;
       box-shadow: inset 0 1px rgba(255, 255, 255, 0);
       text-shadow: none;
       -gtk-icon-shadow: none; }
-    .app-notification .flat.button:active, .app-notification button.flat:active, popover.background.touch-selection button.flat:active, popover.background.magnifier button.flat:active, .app-notification .flat.button:checked, .app-notification button.flat:checked, popover.background.touch-selection button.flat:checked, popover.background.magnifier button.flat:checked, .osd
-    button.flat:active, .osd
-    button.flat:checked {
+    .app-notification .flat.button:active, .app-notification button.flat:active, popover.background.touch-selection button.flat:active, popover.background.magnifier button.flat:active, .app-notification .flat.button:checked, .app-notification button.flat:checked, popover.background.touch-selection button.flat:checked, popover.background.magnifier button.flat:checked,
+    .osd button.flat:active,
+    .osd button.flat:checked {
       color: white;
       border-color: rgba(0, 0, 0, 0.7);
       background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), transparent);
@@ -779,8 +763,8 @@ button.suggested-action {
   outline-color: rgba(255, 255, 255, 0.3);
   border-color: #08528d;
   background-image: linear-gradient(to bottom, #2196f3, #0d8aee);
-  text-shadow: 0 1px rgba(0, 0, 0, 0.56706);
-  -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.56706);
+  text-shadow: 0 1px rgba(0, 0, 0, 0.5670588235);
+  -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.5670588235);
   box-shadow: inset 0 1px rgba(255, 255, 255, 0.4);
   box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.05); }
   button.suggested-action.flat {
@@ -796,95 +780,55 @@ button.suggested-action {
     outline-color: rgba(255, 255, 255, 0.3);
     border-color: #08528d;
     background-image: linear-gradient(to bottom, #2698f3, #1791f2 60%, #0e8df2);
-    text-shadow: 0 1px rgba(0, 0, 0, 0.51906);
-    -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.51906);
+    text-shadow: 0 1px rgba(0, 0, 0, 0.5190588235);
+    -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.5190588235);
     box-shadow: inset 0 1px rgba(255, 255, 255, 0.4); }
-  button.suggested-action:active,
-  button.suggested-action:checked {
+  button.suggested-action:active, button.suggested-action:checked {
     color: white;
     outline-color: rgba(255, 255, 255, 0.3);
     border-color: #08528d;
     background-image: linear-gradient(to bottom, #0c84e4, #1791f2);
-    text-shadow: 0 1px rgba(0, 0, 0, 0.64706);
-    -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.64706);
+    text-shadow: 0 1px rgba(0, 0, 0, 0.6470588235);
+    -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.6470588235);
     box-shadow: inset 0 2px 1px -2px rgba(0, 0, 0, 0.6);
     box-shadow: inset 0 1px 1px 0 rgba(0, 0, 0, 0.05), 0 1px 0 0 rgba(255, 255, 255, 0.05); }
-  button.suggested-action:backdrop,
-  button.suggested-action.flat:backdrop {
+  button.suggested-action:backdrop, button.suggested-action.flat:backdrop {
     border-color: #08528d;
     background-image: linear-gradient(to bottom, #2196f3, transparent);
     text-shadow: none;
     -gtk-icon-shadow: none;
     box-shadow: inset 0 1px rgba(255, 255, 255, 0); }
-    button.suggested-action:backdrop GtkLabel,
-    button.suggested-action:backdrop,
-    button.suggested-action.flat:backdrop GtkLabel,
-    button.suggested-action.flat:backdrop {
+    button.suggested-action:backdrop GtkLabel, button.suggested-action:backdrop, button.suggested-action.flat:backdrop GtkLabel, button.suggested-action.flat:backdrop {
       color: #d3eafd; }
-    button.suggested-action:backdrop label,
-    button.suggested-action:backdrop,
-    button.suggested-action.flat:backdrop label,
-    button.suggested-action.flat:backdrop {
+    button.suggested-action:backdrop label, button.suggested-action:backdrop, button.suggested-action.flat:backdrop label, button.suggested-action.flat:backdrop {
       color: #d3eafd; }
-    button.suggested-action:backdrop:active,
-    button.suggested-action:backdrop:checked,
-    button.suggested-action.flat:backdrop:active,
-    button.suggested-action.flat:backdrop:checked {
+    button.suggested-action:backdrop:active, button.suggested-action:backdrop:checked, button.suggested-action.flat:backdrop:active, button.suggested-action.flat:backdrop:checked {
       border-color: #08528d;
       background-image: none;
       box-shadow: inset 0 1px 1px 0 rgba(0, 0, 0, 0.05), 0 1px 0 0 rgba(255, 255, 255, 0.05); }
-      button.suggested-action:backdrop:active GtkLabel,
-      button.suggested-action:backdrop:active,
-      button.suggested-action:backdrop:checked GtkLabel,
-      button.suggested-action:backdrop:checked,
-      button.suggested-action.flat:backdrop:active GtkLabel,
-      button.suggested-action.flat:backdrop:active,
-      button.suggested-action.flat:backdrop:checked GtkLabel,
-      button.suggested-action.flat:backdrop:checked {
+      button.suggested-action:backdrop:active GtkLabel, button.suggested-action:backdrop:active, button.suggested-action:backdrop:checked GtkLabel, button.suggested-action:backdrop:checked, button.suggested-action.flat:backdrop:active GtkLabel, button.suggested-action.flat:backdrop:active, button.suggested-action.flat:backdrop:checked GtkLabel, button.suggested-action.flat:backdrop:checked {
         color: #cee5f7; }
-      button.suggested-action:backdrop:active label,
-      button.suggested-action:backdrop:active,
-      button.suggested-action:backdrop:checked label,
-      button.suggested-action:backdrop:checked,
-      button.suggested-action.flat:backdrop:active label,
-      button.suggested-action.flat:backdrop:active,
-      button.suggested-action.flat:backdrop:checked label,
-      button.suggested-action.flat:backdrop:checked {
+      button.suggested-action:backdrop:active label, button.suggested-action:backdrop:active, button.suggested-action:backdrop:checked label, button.suggested-action:backdrop:checked, button.suggested-action.flat:backdrop:active label, button.suggested-action.flat:backdrop:active, button.suggested-action.flat:backdrop:checked label, button.suggested-action.flat:backdrop:checked {
         color: #cee5f7; }
-    button.suggested-action:backdrop:disabled,
-    button.suggested-action.flat:backdrop:disabled {
+    button.suggested-action:backdrop:disabled, button.suggested-action.flat:backdrop:disabled {
       border-color: #242f34;
       background-image: none;
       background-color: #3d4f57;
       text-shadow: none;
       -gtk-icon-shadow: none;
       box-shadow: inset 0 1px rgba(255, 255, 255, 0); }
-      button.suggested-action:backdrop:disabled GtkLabel,
-      button.suggested-action:backdrop:disabled,
-      button.suggested-action.flat:backdrop:disabled GtkLabel,
-      button.suggested-action.flat:backdrop:disabled {
+      button.suggested-action:backdrop:disabled GtkLabel, button.suggested-action:backdrop:disabled, button.suggested-action.flat:backdrop:disabled GtkLabel, button.suggested-action.flat:backdrop:disabled {
         color: #56707c; }
-      button.suggested-action:backdrop:disabled label,
-      button.suggested-action:backdrop:disabled,
-      button.suggested-action.flat:backdrop:disabled label,
-      button.suggested-action.flat:backdrop:disabled {
+      button.suggested-action:backdrop:disabled label, button.suggested-action:backdrop:disabled, button.suggested-action.flat:backdrop:disabled label, button.suggested-action.flat:backdrop:disabled {
         color: #56707c; }
-      button.suggested-action:backdrop:disabled:active,
-      button.suggested-action:backdrop:disabled:checked,
-      button.suggested-action.flat:backdrop:disabled:active,
-      button.suggested-action.flat:backdrop:disabled:checked {
+      button.suggested-action:backdrop:disabled:active, button.suggested-action:backdrop:disabled:checked, button.suggested-action.flat:backdrop:disabled:active, button.suggested-action.flat:backdrop:disabled:checked {
         border-color: #08528d;
         background-image: none;
         background-color: #1f80cc;
         box-shadow: inset 0 1px 1px 0 rgba(0, 0, 0, 0.05), 0 1px 0 0 rgba(255, 255, 255, 0.05); }
-        button.suggested-action:backdrop:disabled:active label,
-        button.suggested-action:backdrop:disabled:checked label,
-        button.suggested-action.flat:backdrop:disabled:active label,
-        button.suggested-action.flat:backdrop:disabled:checked label {
+        button.suggested-action:backdrop:disabled:active label, button.suggested-action:backdrop:disabled:checked label, button.suggested-action.flat:backdrop:disabled:active label, button.suggested-action.flat:backdrop:disabled:checked label {
           color: #6dacde; }
-  button.suggested-action.flat:backdrop,
-  button.suggested-action.flat:disabled,
-  button.suggested-action.flat:backdrop:disabled {
+  button.suggested-action.flat:backdrop, button.suggested-action.flat:disabled, button.suggested-action.flat:backdrop:disabled {
     border-color: transparent;
     background-color: transparent;
     background-image: none;
@@ -899,31 +843,21 @@ button.suggested-action {
     text-shadow: none;
     box-shadow: none;
     -gtk-icon-shadow: none; }
-    button.suggested-action:disabled GtkLabel,
-    button.suggested-action:disabled {
+    button.suggested-action:disabled GtkLabel, button.suggested-action:disabled {
       color: #839096; }
-    button.suggested-action:disabled label,
-    button.suggested-action:disabled {
+    button.suggested-action:disabled label, button.suggested-action:disabled {
       color: #839096; }
-    button.suggested-action:disabled:active,
-    button.suggested-action:disabled:checked {
+    button.suggested-action:disabled:active, button.suggested-action:disabled:checked {
       border-color: #08528d;
       background-image: none;
       background-color: #1f80cc;
       text-shadow: none;
       box-shadow: inset 0 1px 1px 0 rgba(0, 0, 0, 0.05), 0 1px 0 0 rgba(255, 255, 255, 0.05); }
-      button.suggested-action:disabled:active GtkLabel,
-      button.suggested-action:disabled:active,
-      button.suggested-action:disabled:checked GtkLabel,
-      button.suggested-action:disabled:checked {
+      button.suggested-action:disabled:active GtkLabel, button.suggested-action:disabled:active, button.suggested-action:disabled:checked GtkLabel, button.suggested-action:disabled:checked {
         color: #a5cceb; }
-      button.suggested-action:disabled:active label,
-      button.suggested-action:disabled:active,
-      button.suggested-action:disabled:checked label,
-      button.suggested-action:disabled:checked {
+      button.suggested-action:disabled:active label, button.suggested-action:disabled:active, button.suggested-action:disabled:checked label, button.suggested-action:disabled:checked {
         color: #a5cceb; }
-  .osd
-  button.suggested-action {
+  .osd button.suggested-action {
     color: #cfd8dc;
     border-color: rgba(0, 0, 0, 0.7);
     background-image: linear-gradient(to bottom, rgba(33, 150, 243, 0.5), transparent);
@@ -932,8 +866,7 @@ button.suggested-action {
     text-shadow: 0 1px black;
     -gtk-icon-shadow: 0 1px black;
     outline-color: rgba(207, 216, 220, 0.3); }
-    .osd
-    button.suggested-action:hover {
+    .osd button.suggested-action:hover {
       color: white;
       border-color: rgba(0, 0, 0, 0.7);
       background-image: linear-gradient(to bottom, rgba(33, 150, 243, 0.7), transparent);
@@ -942,11 +875,7 @@ button.suggested-action {
       text-shadow: 0 1px black;
       -gtk-icon-shadow: 0 1px black;
       outline-color: rgba(207, 216, 220, 0.3); }
-    .osd
-    button.suggested-action:active:backdrop, .osd
-    button.suggested-action:active, .osd
-    button.suggested-action:checked:backdrop, .osd
-    button.suggested-action:checked {
+    .osd button.suggested-action:active:backdrop, .osd button.suggested-action:active, .osd button.suggested-action:checked:backdrop, .osd button.suggested-action:checked {
       color: white;
       border-color: rgba(0, 0, 0, 0.7);
       background-image: linear-gradient(to bottom, #2196f3, transparent);
@@ -955,9 +884,7 @@ button.suggested-action {
       text-shadow: none;
       -gtk-icon-shadow: none;
       outline-color: rgba(207, 216, 220, 0.3); }
-    .osd
-    button.suggested-action:disabled:backdrop, .osd
-    button.suggested-action:disabled {
+    .osd button.suggested-action:disabled:backdrop, .osd button.suggested-action:disabled {
       color: #787f81;
       border-color: rgba(0, 0, 0, 0.7);
       background-image: linear-gradient(to bottom, rgba(50, 55, 56, 0.5), transparent);
@@ -965,8 +892,7 @@ button.suggested-action {
       box-shadow: none;
       text-shadow: none;
       -gtk-icon-shadow: none; }
-    .osd
-    button.suggested-action:backdrop {
+    .osd button.suggested-action:backdrop {
       color: #cfd8dc;
       border-color: rgba(0, 0, 0, 0.7);
       background-image: linear-gradient(to bottom, rgba(33, 150, 243, 0.5), transparent);
@@ -979,8 +905,8 @@ button.destructive-action {
   outline-color: rgba(255, 255, 255, 0.3);
   border-color: #420e0e;
   background-image: linear-gradient(to bottom, #ab2424, #962020);
-  text-shadow: 0 1px rgba(0, 0, 0, 0.67529);
-  -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.67529);
+  text-shadow: 0 1px rgba(0, 0, 0, 0.6752941176);
+  -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.6752941176);
   box-shadow: inset 0 1px rgba(255, 255, 255, 0.2);
   box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.05); }
   button.destructive-action.flat {
@@ -996,95 +922,55 @@ button.destructive-action {
     outline-color: rgba(255, 255, 255, 0.3);
     border-color: #420e0e;
     background-image: linear-gradient(to bottom, #af2525, #a22222 60%, #9a2121);
-    text-shadow: 0 1px rgba(0, 0, 0, 0.62729);
-    -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.62729);
+    text-shadow: 0 1px rgba(0, 0, 0, 0.6272941176);
+    -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.6272941176);
     box-shadow: inset 0 1px rgba(255, 255, 255, 0.05); }
-  button.destructive-action:active,
-  button.destructive-action:checked {
+  button.destructive-action:active, button.destructive-action:checked {
     color: white;
     outline-color: rgba(255, 255, 255, 0.3);
     border-color: #420e0e;
     background-image: linear-gradient(to bottom, #8d1e1e, #a22222);
-    text-shadow: 0 1px rgba(0, 0, 0, 0.75529);
-    -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.75529);
+    text-shadow: 0 1px rgba(0, 0, 0, 0.7552941176);
+    -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.7552941176);
     box-shadow: inset 0 2px 1px -2px rgba(0, 0, 0, 0.6);
     box-shadow: inset 0 1px 1px 0 rgba(0, 0, 0, 0.05), 0 1px 0 0 rgba(255, 255, 255, 0.05); }
-  button.destructive-action:backdrop,
-  button.destructive-action.flat:backdrop {
+  button.destructive-action:backdrop, button.destructive-action.flat:backdrop {
     border-color: #420e0e;
     background-image: linear-gradient(to bottom, #ab2424, transparent);
     text-shadow: none;
     -gtk-icon-shadow: none;
     box-shadow: inset 0 1px rgba(255, 255, 255, 0); }
-    button.destructive-action:backdrop GtkLabel,
-    button.destructive-action:backdrop,
-    button.destructive-action.flat:backdrop GtkLabel,
-    button.destructive-action.flat:backdrop {
+    button.destructive-action:backdrop GtkLabel, button.destructive-action:backdrop, button.destructive-action.flat:backdrop GtkLabel, button.destructive-action.flat:backdrop {
       color: #eed3d3; }
-    button.destructive-action:backdrop label,
-    button.destructive-action:backdrop,
-    button.destructive-action.flat:backdrop label,
-    button.destructive-action.flat:backdrop {
+    button.destructive-action:backdrop label, button.destructive-action:backdrop, button.destructive-action.flat:backdrop label, button.destructive-action.flat:backdrop {
       color: #eed3d3; }
-    button.destructive-action:backdrop:active,
-    button.destructive-action:backdrop:checked,
-    button.destructive-action.flat:backdrop:active,
-    button.destructive-action.flat:backdrop:checked {
+    button.destructive-action:backdrop:active, button.destructive-action:backdrop:checked, button.destructive-action.flat:backdrop:active, button.destructive-action.flat:backdrop:checked {
       border-color: #420e0e;
       background-image: none;
       box-shadow: inset 0 1px 1px 0 rgba(0, 0, 0, 0.05), 0 1px 0 0 rgba(255, 255, 255, 0.05); }
-      button.destructive-action:backdrop:active GtkLabel,
-      button.destructive-action:backdrop:active,
-      button.destructive-action:backdrop:checked GtkLabel,
-      button.destructive-action:backdrop:checked,
-      button.destructive-action.flat:backdrop:active GtkLabel,
-      button.destructive-action.flat:backdrop:active,
-      button.destructive-action.flat:backdrop:checked GtkLabel,
-      button.destructive-action.flat:backdrop:checked {
+      button.destructive-action:backdrop:active GtkLabel, button.destructive-action:backdrop:active, button.destructive-action:backdrop:checked GtkLabel, button.destructive-action:backdrop:checked, button.destructive-action.flat:backdrop:active GtkLabel, button.destructive-action.flat:backdrop:active, button.destructive-action.flat:backdrop:checked GtkLabel, button.destructive-action.flat:backdrop:checked {
         color: #e6d1d1; }
-      button.destructive-action:backdrop:active label,
-      button.destructive-action:backdrop:active,
-      button.destructive-action:backdrop:checked label,
-      button.destructive-action:backdrop:checked,
-      button.destructive-action.flat:backdrop:active label,
-      button.destructive-action.flat:backdrop:active,
-      button.destructive-action.flat:backdrop:checked label,
-      button.destructive-action.flat:backdrop:checked {
+      button.destructive-action:backdrop:active label, button.destructive-action:backdrop:active, button.destructive-action:backdrop:checked label, button.destructive-action:backdrop:checked, button.destructive-action.flat:backdrop:active label, button.destructive-action.flat:backdrop:active, button.destructive-action.flat:backdrop:checked label, button.destructive-action.flat:backdrop:checked {
         color: #e6d1d1; }
-    button.destructive-action:backdrop:disabled,
-    button.destructive-action.flat:backdrop:disabled {
+    button.destructive-action:backdrop:disabled, button.destructive-action.flat:backdrop:disabled {
       border-color: #242f34;
       background-image: none;
       background-color: #3d4f57;
       text-shadow: none;
       -gtk-icon-shadow: none;
       box-shadow: inset 0 1px rgba(255, 255, 255, 0); }
-      button.destructive-action:backdrop:disabled GtkLabel,
-      button.destructive-action:backdrop:disabled,
-      button.destructive-action.flat:backdrop:disabled GtkLabel,
-      button.destructive-action.flat:backdrop:disabled {
+      button.destructive-action:backdrop:disabled GtkLabel, button.destructive-action:backdrop:disabled, button.destructive-action.flat:backdrop:disabled GtkLabel, button.destructive-action.flat:backdrop:disabled {
         color: #56707c; }
-      button.destructive-action:backdrop:disabled label,
-      button.destructive-action:backdrop:disabled,
-      button.destructive-action.flat:backdrop:disabled label,
-      button.destructive-action.flat:backdrop:disabled {
+      button.destructive-action:backdrop:disabled label, button.destructive-action:backdrop:disabled, button.destructive-action.flat:backdrop:disabled label, button.destructive-action.flat:backdrop:disabled {
         color: #56707c; }
-      button.destructive-action:backdrop:disabled:active,
-      button.destructive-action:backdrop:disabled:checked,
-      button.destructive-action.flat:backdrop:disabled:active,
-      button.destructive-action.flat:backdrop:disabled:checked {
+      button.destructive-action:backdrop:disabled:active, button.destructive-action:backdrop:disabled:checked, button.destructive-action.flat:backdrop:disabled:active, button.destructive-action.flat:backdrop:disabled:checked {
         border-color: #420e0e;
         background-image: none;
         background-color: #882628;
         box-shadow: inset 0 1px 1px 0 rgba(0, 0, 0, 0.05), 0 1px 0 0 rgba(255, 255, 255, 0.05); }
-        button.destructive-action:backdrop:disabled:active label,
-        button.destructive-action:backdrop:disabled:checked label,
-        button.destructive-action.flat:backdrop:disabled:active label,
-        button.destructive-action.flat:backdrop:disabled:checked label {
+        button.destructive-action:backdrop:disabled:active label, button.destructive-action:backdrop:disabled:checked label, button.destructive-action.flat:backdrop:disabled:active label, button.destructive-action.flat:backdrop:disabled:checked label {
           color: #b27273; }
-  button.destructive-action.flat:backdrop,
-  button.destructive-action.flat:disabled,
-  button.destructive-action.flat:backdrop:disabled {
+  button.destructive-action.flat:backdrop, button.destructive-action.flat:disabled, button.destructive-action.flat:backdrop:disabled {
     border-color: transparent;
     background-color: transparent;
     background-image: none;
@@ -1099,31 +985,21 @@ button.destructive-action {
     text-shadow: none;
     box-shadow: none;
     -gtk-icon-shadow: none; }
-    button.destructive-action:disabled GtkLabel,
-    button.destructive-action:disabled {
+    button.destructive-action:disabled GtkLabel, button.destructive-action:disabled {
       color: #839096; }
-    button.destructive-action:disabled label,
-    button.destructive-action:disabled {
+    button.destructive-action:disabled label, button.destructive-action:disabled {
       color: #839096; }
-    button.destructive-action:disabled:active,
-    button.destructive-action:disabled:checked {
+    button.destructive-action:disabled:active, button.destructive-action:disabled:checked {
       border-color: #420e0e;
       background-image: none;
       background-color: #882628;
       text-shadow: none;
       box-shadow: inset 0 1px 1px 0 rgba(0, 0, 0, 0.05), 0 1px 0 0 rgba(255, 255, 255, 0.05); }
-      button.destructive-action:disabled:active GtkLabel,
-      button.destructive-action:disabled:active,
-      button.destructive-action:disabled:checked GtkLabel,
-      button.destructive-action:disabled:checked {
+      button.destructive-action:disabled:active GtkLabel, button.destructive-action:disabled:active, button.destructive-action:disabled:checked GtkLabel, button.destructive-action:disabled:checked {
         color: #cfa8a9; }
-      button.destructive-action:disabled:active label,
-      button.destructive-action:disabled:active,
-      button.destructive-action:disabled:checked label,
-      button.destructive-action:disabled:checked {
+      button.destructive-action:disabled:active label, button.destructive-action:disabled:active, button.destructive-action:disabled:checked label, button.destructive-action:disabled:checked {
         color: #cfa8a9; }
-  .osd
-  button.destructive-action {
+  .osd button.destructive-action {
     color: #cfd8dc;
     border-color: rgba(0, 0, 0, 0.7);
     background-image: linear-gradient(to bottom, rgba(171, 36, 36, 0.5), transparent);
@@ -1132,8 +1008,7 @@ button.destructive-action {
     text-shadow: 0 1px black;
     -gtk-icon-shadow: 0 1px black;
     outline-color: rgba(207, 216, 220, 0.3); }
-    .osd
-    button.destructive-action:hover {
+    .osd button.destructive-action:hover {
       color: white;
       border-color: rgba(0, 0, 0, 0.7);
       background-image: linear-gradient(to bottom, rgba(171, 36, 36, 0.7), transparent);
@@ -1142,11 +1017,7 @@ button.destructive-action {
       text-shadow: 0 1px black;
       -gtk-icon-shadow: 0 1px black;
       outline-color: rgba(207, 216, 220, 0.3); }
-    .osd
-    button.destructive-action:active:backdrop, .osd
-    button.destructive-action:active, .osd
-    button.destructive-action:checked:backdrop, .osd
-    button.destructive-action:checked {
+    .osd button.destructive-action:active:backdrop, .osd button.destructive-action:active, .osd button.destructive-action:checked:backdrop, .osd button.destructive-action:checked {
       color: white;
       border-color: rgba(0, 0, 0, 0.7);
       background-image: linear-gradient(to bottom, #ab2424, transparent);
@@ -1155,9 +1026,7 @@ button.destructive-action {
       text-shadow: none;
       -gtk-icon-shadow: none;
       outline-color: rgba(207, 216, 220, 0.3); }
-    .osd
-    button.destructive-action:disabled:backdrop, .osd
-    button.destructive-action:disabled {
+    .osd button.destructive-action:disabled:backdrop, .osd button.destructive-action:disabled {
       color: #787f81;
       border-color: rgba(0, 0, 0, 0.7);
       background-image: linear-gradient(to bottom, rgba(50, 55, 56, 0.5), transparent);
@@ -1165,8 +1034,7 @@ button.destructive-action {
       box-shadow: none;
       text-shadow: none;
       -gtk-icon-shadow: none; }
-    .osd
-    button.destructive-action:backdrop {
+    .osd button.destructive-action:backdrop {
       color: #cfd8dc;
       border-color: rgba(0, 0, 0, 0.7);
       background-image: linear-gradient(to bottom, rgba(171, 36, 36, 0.5), transparent);
@@ -1174,67 +1042,49 @@ button.destructive-action {
       box-shadow: none;
       text-shadow: none;
       -gtk-icon-shadow: none; }
-.stack-switcher >
-button {
+.stack-switcher > button {
   outline-offset: -3px; }
-  .stack-switcher >
-  button > label {
+  .stack-switcher > button > label {
     padding-left: 6px;
     padding-right: 6px; }
-  .stack-switcher >
-  button > image {
+  .stack-switcher > button > image {
     padding-left: 6px;
     padding-right: 6px;
     padding-top: 3px;
     padding-bottom: 3px; }
-  .stack-switcher >
-  button.text-button {
+  .stack-switcher > button.text-button {
     padding-left: 10px;
     padding-right: 10px; }
-  .stack-switcher >
-  button.image-button {
+  .stack-switcher > button.image-button {
     padding-left: 2px;
     padding-right: 2px; }
-  .stack-switcher >
-  button.needs-attention:active > label,
-  .stack-switcher >
-  button.needs-attention:active > image, .stack-switcher >
-  button.needs-attention:checked > label,
-  .stack-switcher >
-  button.needs-attention:checked > image {
+  .stack-switcher > button.needs-attention:active > label,
+  .stack-switcher > button.needs-attention:active > image, .stack-switcher > button.needs-attention:checked > label,
+  .stack-switcher > button.needs-attention:checked > image {
     animation: none;
     background-image: none; }
-.inline-toolbar
-button, .inline-toolbar
-button:backdrop {
+.inline-toolbar button, .inline-toolbar button:backdrop {
   border-radius: 2px;
   border-width: 1px; }
-.primary-toolbar
-button {
+.primary-toolbar button {
   -gtk-icon-shadow: none; }
 
-.stack-switcher >
-button.needs-attention > label,
-.stack-switcher >
-button.needs-attention > image, .sidebar .list-row.needs-attention > label,
+.stack-switcher > button.needs-attention > label,
+.stack-switcher > button.needs-attention > image, .sidebar .list-row.needs-attention > label,
 .sidebar row.needs-attention > label, stacksidebar .list-row.needs-attention > label,
 stacksidebar row.needs-attention > label {
   animation: needs_attention 150ms ease-in;
-  background-image: -gtk-gradient(radial, center center, 0, center center, 0.5, to(#6ab8f7), to(transparent)), -gtk-gradient(radial, center center, 0, center center, 0.45, to(rgba(0, 0, 0, 0.7898)), to(transparent));
+  background-image: -gtk-gradient(radial, center center, 0, center center, 0.5, to(#6ab8f7), to(transparent)), -gtk-gradient(radial, center center, 0, center center, 0.45, to(rgba(0, 0, 0, 0.7898039216)), to(transparent));
   background-size: 6px 6px, 6px 6px;
   background-repeat: no-repeat;
   background-position: right 3px, right 2px; }
-  .stack-switcher >
-  button.needs-attention > label:backdrop,
-  .stack-switcher >
-  button.needs-attention > image:backdrop, .sidebar .list-row.needs-attention > label:backdrop,
+  .stack-switcher > button.needs-attention > label:backdrop,
+  .stack-switcher > button.needs-attention > image:backdrop, .sidebar .list-row.needs-attention > label:backdrop,
   .sidebar row.needs-attention > label:backdrop, stacksidebar .list-row.needs-attention > label:backdrop,
   stacksidebar row.needs-attention > label:backdrop {
     background-size: 6px 6px, 0 0; }
-  .stack-switcher >
-  button.needs-attention > label:dir(rtl),
-  .stack-switcher >
-  button.needs-attention > image:dir(rtl), .sidebar .list-row.needs-attention > label:dir(rtl),
+  .stack-switcher > button.needs-attention > label:dir(rtl),
+  .stack-switcher > button.needs-attention > image:dir(rtl), .sidebar .list-row.needs-attention > label:dir(rtl),
   .sidebar row.needs-attention > label:dir(rtl), stacksidebar .list-row.needs-attention > label:dir(rtl),
   stacksidebar row.needs-attention > label:dir(rtl) {
     background-position: left 3px, left 2px; }
@@ -1244,8 +1094,8 @@ stacksidebar row.needs-attention > label {
   outline-color: rgba(207, 216, 220, 0.3);
   border-color: #222c31;
   background-image: linear-gradient(to bottom, #37474f, #2d3940);
-  text-shadow: 0 1px rgba(0, 0, 0, 0.7898);
-  -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.7898);
+  text-shadow: 0 1px rgba(0, 0, 0, 0.7898039216);
+  -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.7898039216);
   box-shadow: inset 0 1px rgba(255, 255, 255, 0.05);
   box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.05); }
   .inline-toolbar toolbutton > button:hover {
@@ -1253,16 +1103,16 @@ stacksidebar row.needs-attention > label {
     outline-color: rgba(207, 216, 220, 0.3);
     border-color: #222c31;
     background-image: linear-gradient(to bottom, #394a52, #334249 60%, #2f3c43);
-    text-shadow: 0 1px rgba(0, 0, 0, 0.7418);
-    -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.7418);
+    text-shadow: 0 1px rgba(0, 0, 0, 0.7418039216);
+    -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.7418039216);
     box-shadow: inset 0 1px rgba(255, 255, 255, 0.05); }
   .inline-toolbar toolbutton > button:active, .inline-toolbar toolbutton > button:checked {
     color: #cfd8dc;
     outline-color: rgba(207, 216, 220, 0.3);
     border-color: #222c31;
     background-image: linear-gradient(to bottom, #28343a, #334249);
-    text-shadow: 0 1px rgba(0, 0, 0, 0.8698);
-    -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.8698);
+    text-shadow: 0 1px rgba(0, 0, 0, 0.8698039216);
+    -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.8698039216);
     box-shadow: inset 0 2px 1px -2px rgba(0, 0, 0, 0.6);
     box-shadow: inset 0 1px 1px 0 rgba(0, 0, 0, 0.05), 0 1px 0 0 rgba(255, 255, 255, 0.05); }
   .inline-toolbar toolbutton > button:disabled {
@@ -1324,54 +1174,35 @@ stacksidebar row.needs-attention > label {
           color: #56707c; }
 
 toolbar.inline-toolbar toolbutton > button.flat,
-toolbar.inline-toolbar toolbutton:backdrop > button.flat, .inline-toolbar
-button, .inline-toolbar
-button:backdrop, .linked >
-button, .linked >
-button:hover, .linked >
-button:active, .linked >
-button:checked, .linked >
-button:backdrop, .linked:not(.vertical) > spinbutton:not(.vertical), GeditWindow.linked:not(.vertical) > .entry, .linked:not(.vertical) >
+toolbar.inline-toolbar toolbutton:backdrop > button.flat, .inline-toolbar button, .inline-toolbar button:backdrop, .linked > button, .linked > button:hover, .linked > button:active, .linked > button:checked, .linked > button:backdrop, .linked:not(.vertical) > spinbutton:not(.vertical), GeditWindow.linked:not(.vertical) > .entry, .linked:not(.vertical) >
 entry, .linked > combobox > box > button.combo:dir(ltr), .linked > combobox > box > button.combo:dir(rtl) {
   border-radius: 0;
   border-right-style: none; }
 
-.inline-toolbar
-button:last-child, .linked >
-button:last-child, toolbar.inline-toolbar toolbutton:last-child > button.flat,
+.inline-toolbar button:last-child, .linked > button:last-child, toolbar.inline-toolbar toolbutton:last-child > button.flat,
 toolbar.inline-toolbar toolbutton:backdrop:last-child > button.flat, combobox.linked button:nth-child(2):dir(ltr), .linked:not(.vertical) > combobox:last-child > box > button.combo, .linked:not(.vertical) > spinbutton:last-child:not(.vertical), GeditWindow.linked:not(.vertical) > .entry:last-child, .linked:not(.vertical) >
 entry:last-child {
   border-right-style: solid; }
-.inline-toolbar
-button:only-child, .linked >
-button:only-child, toolbar.inline-toolbar toolbutton:only-child > button.flat,
+.inline-toolbar button:only-child, .linked > button:only-child, toolbar.inline-toolbar toolbutton:only-child > button.flat,
 toolbar.inline-toolbar toolbutton:backdrop:only-child > button.flat, .linked:not(.vertical) > combobox:only-child > box > button.combo, .linked:not(.vertical) > spinbutton:only-child:not(.vertical), GeditWindow.linked:not(.vertical) > .entry:only-child, .linked:not(.vertical) >
 entry:only-child {
   border-style: solid; }
 
-.linked.vertical >
-button, .linked.vertical >
-button:hover, .linked.vertical >
-button:active, .linked.vertical >
-button:checked, .linked.vertical >
-button:backdrop, .linked.vertical > spinbutton:not(.vertical), GeditWindow.linked.vertical > .entry, .linked.vertical >
+.linked.vertical > button, .linked.vertical > button:hover, .linked.vertical > button:active, .linked.vertical > button:checked, .linked.vertical > button:backdrop, .linked.vertical > spinbutton:not(.vertical), GeditWindow.linked.vertical > .entry, .linked.vertical >
 entry, .linked.vertical > combobox > box > button.combo {
   border-style: solid solid none solid;
   border-radius: 0; }
 
-.linked.vertical >
-button:first-child, .linked.vertical > combobox:first-child > box > button.combo, .linked.vertical > spinbutton:first-child:not(.vertical), GeditWindow.linked.vertical > .entry:first-child, .linked.vertical >
+.linked.vertical > button:first-child, .linked.vertical > combobox:first-child > box > button.combo, .linked.vertical > spinbutton:first-child:not(.vertical), GeditWindow.linked.vertical > .entry:first-child, .linked.vertical >
 entry:first-child {
   border-top-left-radius: 3px;
   border-top-right-radius: 3px; }
-.linked.vertical >
-button:last-child, .linked.vertical > combobox:last-child > box > button.combo, .linked.vertical > spinbutton:last-child:not(.vertical), GeditWindow.linked.vertical > .entry:last-child, .linked.vertical >
+.linked.vertical > button:last-child, .linked.vertical > combobox:last-child > box > button.combo, .linked.vertical > spinbutton:last-child:not(.vertical), GeditWindow.linked.vertical > .entry:last-child, .linked.vertical >
 entry:last-child {
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
   border-style: solid; }
-.linked.vertical >
-button:only-child, .linked.vertical > combobox:only-child > box > button.combo, .linked.vertical > spinbutton:only-child:not(.vertical), GeditWindow.linked.vertical > .entry:only-child, .linked.vertical >
+.linked.vertical > button:only-child, .linked.vertical > combobox:only-child > box > button.combo, .linked.vertical > spinbutton:only-child:not(.vertical), GeditWindow.linked.vertical > .entry:only-child, .linked.vertical >
 entry:only-child {
   border-radius: 3px;
   border-style: solid; }
@@ -2067,8 +1898,8 @@ colorswatch#add-color-button {
     outline-color: rgba(207, 216, 220, 0.3);
     border-color: #222c31;
     background-image: linear-gradient(to bottom, #37474f, #2d3940);
-    text-shadow: 0 1px rgba(0, 0, 0, 0.7898);
-    -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.7898);
+    text-shadow: 0 1px rgba(0, 0, 0, 0.7898039216);
+    -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.7898039216);
     box-shadow: inset 0 1px rgba(255, 255, 255, 0.05);
     box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.05); }
     colorswatch#add-color-button overlay:hover {
@@ -2076,8 +1907,8 @@ colorswatch#add-color-button {
       outline-color: rgba(207, 216, 220, 0.3);
       border-color: #222c31;
       background-image: linear-gradient(to bottom, #394a52, #334249 60%, #2f3c43);
-      text-shadow: 0 1px rgba(0, 0, 0, 0.7418);
-      -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.7418);
+      text-shadow: 0 1px rgba(0, 0, 0, 0.7418039216);
+      -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.7418039216);
       box-shadow: inset 0 1px rgba(255, 255, 255, 0.05); }
     colorswatch#add-color-button overlay:backdrop {
       border-color: #242f34;
@@ -2185,8 +2016,7 @@ filechooserbutton:drop(active) {
 /****************
  * Text Entries *
  ****************/
-spinbutton:not(.vertical), GeditWindow > .entry,
-entry {
+spinbutton:not(.vertical), GeditWindow > .entry, entry {
   min-height: 20px;
   padding: 4px 6px;
   border: 1px solid;
@@ -2298,35 +2128,35 @@ entry {
   entry:drop(active) {
     border-color: #4e9a06;
     box-shadow: inset 0 0 0 1px #4e9a06; }
-  .osd spinbutton:not(.vertical), .osd GeditWindow > .entry, .osd
-  entry {
+  .osd spinbutton:not(.vertical), .osd GeditWindow > .entry,
+  .osd entry {
     color: white;
     border-color: rgba(0, 0, 0, 0.7);
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), transparent);
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5));
     background-clip: padding-box;
     box-shadow: none;
     text-shadow: 0 1px black;
     -gtk-icon-shadow: 0 1px black; }
-    .osd spinbutton:focus:not(.vertical), .osd GeditWindow > .entry:focus, .osd
-    entry:focus {
+    .osd spinbutton:focus:not(.vertical), .osd GeditWindow > .entry:focus,
+    .osd entry:focus {
       color: white;
       border-color: #2196f3;
-      background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), transparent);
+      background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5));
       background-clip: padding-box;
       box-shadow: inset 0 1px 2px 0 rgba(0, 0, 0, 0.05), inset 0 1px 1px 0 rgba(0, 0, 0, 0.1);
       text-shadow: 0 1px black;
       -gtk-icon-shadow: 0 1px black; }
-    .osd spinbutton:backdrop:not(.vertical), .osd GeditWindow > .entry:backdrop, .osd
-    entry:backdrop {
+    .osd spinbutton:backdrop:not(.vertical), .osd GeditWindow > .entry:backdrop,
+    .osd entry:backdrop {
       color: white;
       border-color: rgba(0, 0, 0, 0.7);
-      background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), transparent);
+      background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5));
       background-clip: padding-box;
       box-shadow: none;
       text-shadow: none;
       -gtk-icon-shadow: none; }
-    .osd spinbutton:disabled:not(.vertical), .osd GeditWindow > .entry:disabled, .osd
-    entry:disabled {
+    .osd spinbutton:disabled:not(.vertical), .osd GeditWindow > .entry:disabled,
+    .osd entry:disabled {
       color: #787f81;
       border-color: rgba(0, 0, 0, 0.7);
       background-image: linear-gradient(to bottom, rgba(50, 55, 56, 0.5), transparent);
@@ -2841,8 +2671,7 @@ GraniteWidgetsWelcome {
 /***************
  * Header Bars *
  ***************/
-.titlebar:not(headerbar),
-headerbar {
+.titlebar:not(headerbar), headerbar {
   padding: 0 8px;
   border: none;
   border-radius: 4px 4px 0 0;
@@ -2900,27 +2729,21 @@ headerbar {
         -gtk-icon-source: -gtk-icontheme("pan-down-symbolic");
         color: rgba(255, 255, 255, 0.5);
         -gtk-icon-shadow: none; }
-  .tiled .titlebar:backdrop:not(headerbar), .tiled .titlebar:not(headerbar), .maximized .titlebar:backdrop:not(headerbar), .maximized .titlebar:not(headerbar), .tiled
-  headerbar:backdrop, .tiled
-  headerbar, .maximized
-  headerbar:backdrop, .maximized
-  headerbar {
+  .tiled .titlebar:backdrop:not(headerbar), .tiled .titlebar:not(headerbar), .maximized .titlebar:backdrop:not(headerbar), .maximized .titlebar:not(headerbar),
+  .tiled headerbar:backdrop,
+  .tiled headerbar, .maximized headerbar:backdrop, .maximized headerbar {
     border-radius: 0; }
-  .default-decoration.titlebar:not(headerbar),
-  headerbar.default-decoration {
+  .default-decoration.titlebar:not(headerbar), headerbar.default-decoration {
     padding: 6px;
     background-color: #303f46;
     color: rgba(255, 255, 255, 0.8); }
-    .default-decoration.titlebar:not(headerbar) .maximized,
-    headerbar.default-decoration .maximized {
+    .default-decoration.titlebar:not(headerbar) .maximized, headerbar.default-decoration .maximized {
       padding: 6px;
       border-radius: 0; }
-    .default-decoration.titlebar:backdrop:not(headerbar),
-    headerbar.default-decoration:backdrop {
+    .default-decoration.titlebar:backdrop:not(headerbar), headerbar.default-decoration:backdrop {
       background-color: #263137;
       color: rgba(255, 255, 255, 0.6); }
-  .titlebar:not(headerbar) entry,
-  headerbar entry {
+  .titlebar:not(headerbar) entry, headerbar entry {
     margin: 6px 0;
     border-radius: 2px;
     padding: 4px;
@@ -2929,51 +2752,38 @@ headerbar {
     background: rgba(69, 90, 100, 0.95);
     color: #cfd8dc;
     box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.2); }
-    .titlebar:not(headerbar) entry > image,
-    headerbar entry > image {
+    .titlebar:not(headerbar) entry > image, headerbar entry > image {
       padding-right: 6px;
       color: rgba(207, 216, 220, 0.8); }
-    .titlebar:not(headerbar) entry:active, .titlebar:not(headerbar) entry:focus,
-    headerbar entry:active,
-    headerbar entry:focus {
+    .titlebar:not(headerbar) entry:active, .titlebar:not(headerbar) entry:focus, headerbar entry:active, headerbar entry:focus {
       background: #455a64;
       color: #cfd8dc;
       box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.4); }
-      .titlebar:not(headerbar) entry:active > image, .titlebar:not(headerbar) entry:focus > image,
-      headerbar entry:active > image,
-      headerbar entry:focus > image {
+      .titlebar:not(headerbar) entry:active > image, .titlebar:not(headerbar) entry:focus > image, headerbar entry:active > image, headerbar entry:focus > image {
         padding-right: 6px;
         color: #cfd8dc; }
-      .titlebar:not(headerbar) entry:active:backdrop, .titlebar:not(headerbar) entry:focus:backdrop,
-      headerbar entry:active:backdrop,
-      headerbar entry:focus:backdrop {
+      .titlebar:not(headerbar) entry:active:backdrop, .titlebar:not(headerbar) entry:focus:backdrop, headerbar entry:active:backdrop, headerbar entry:focus:backdrop {
         background: rgba(69, 90, 100, 0.8);
         color: rgba(207, 216, 220, 0.5);
         box-shadow: none; }
-    .titlebar:not(headerbar) entry:disabled,
-    headerbar entry:disabled {
+    .titlebar:not(headerbar) entry:disabled, headerbar entry:disabled {
       background: rgba(69, 90, 100, 0.6);
       color: rgba(207, 216, 220, 0.5);
       box-shadow: none; }
-      .titlebar:not(headerbar) entry:disabled > image,
-      headerbar entry:disabled > image {
+      .titlebar:not(headerbar) entry:disabled > image, headerbar entry:disabled > image {
         padding-right: 6px;
         color: rgba(207, 216, 220, 0.5); }
-      .titlebar:not(headerbar) entry:disabled:backdrop,
-      headerbar entry:disabled:backdrop {
+      .titlebar:not(headerbar) entry:disabled:backdrop, headerbar entry:disabled:backdrop {
         background: rgba(69, 90, 100, 0.5);
         color: rgba(207, 216, 220, 0.5);
         box-shadow: none; }
-    .titlebar:not(headerbar) entry:backdrop,
-    headerbar entry:backdrop {
+    .titlebar:not(headerbar) entry:backdrop, headerbar entry:backdrop {
       background: rgba(69, 90, 100, 0.8);
       color: rgba(207, 216, 220, 0.5);
       box-shadow: none; }
-      .titlebar:not(headerbar) entry:backdrop > image,
-      headerbar entry:backdrop > image {
+      .titlebar:not(headerbar) entry:backdrop > image, headerbar entry:backdrop > image {
         color: rgba(207, 216, 220, 0.5); }
-  .titlebar:not(headerbar) button,
-  headerbar button {
+  .titlebar:not(headerbar) button, headerbar button {
     background-color: transparent;
     background-image: none;
     border-radius: 0px;
@@ -2983,14 +2793,7 @@ headerbar {
     margin: 0;
     padding: 10px;
     text-shadow: none; }
-    .titlebar:not(headerbar) button.back-button, .titlebar:not(headerbar) button.suggested-action, .titlebar:not(headerbar) button.menu-button, .titlebar:not(headerbar) button.text-button, .titlebar:not(headerbar) button.image-button, .titlebar:not(headerbar) button.linked, .titlebar:not(headerbar) button.flat,
-    headerbar button.back-button,
-    headerbar button.suggested-action,
-    headerbar button.menu-button,
-    headerbar button.text-button,
-    headerbar button.image-button,
-    headerbar button.linked,
-    headerbar button.flat {
+    .titlebar:not(headerbar) button.back-button, .titlebar:not(headerbar) button.suggested-action, .titlebar:not(headerbar) button.menu-button, .titlebar:not(headerbar) button.text-button, .titlebar:not(headerbar) button.image-button, .titlebar:not(headerbar) button.linked, .titlebar:not(headerbar) button.flat, headerbar button.back-button, headerbar button.suggested-action, headerbar button.menu-button, headerbar button.text-button, headerbar button.image-button, headerbar button.linked, headerbar button.flat {
       background-color: transparent;
       background-image: none;
       border-radius: 0px;
@@ -3001,96 +2804,45 @@ headerbar {
       padding: 10px;
       text-shadow: none;
       color: rgba(255, 255, 255, 0.8); }
-      .titlebar:not(headerbar) button.back-button:active, .titlebar:not(headerbar) button.back-button:checked, .titlebar:not(headerbar) button.suggested-action:active, .titlebar:not(headerbar) button.suggested-action:checked, .titlebar:not(headerbar) button.menu-button:active, .titlebar:not(headerbar) button.menu-button:checked, .titlebar:not(headerbar) button.text-button:active, .titlebar:not(headerbar) button.text-button:checked, .titlebar:not(headerbar) button.image-button:active, .titlebar:not(headerbar) button.image-button:checked, .titlebar:not(headerbar) button.linked:active, .titlebar:not(headerbar) button.linked:checked, .titlebar:not(headerbar) button.flat:active, .titlebar:not(headerbar) button.flat:checked,
-      headerbar button.back-button:active,
-      headerbar button.back-button:checked,
-      headerbar button.suggested-action:active,
-      headerbar button.suggested-action:checked,
-      headerbar button.menu-button:active,
-      headerbar button.menu-button:checked,
-      headerbar button.text-button:active,
-      headerbar button.text-button:checked,
-      headerbar button.image-button:active,
-      headerbar button.image-button:checked,
-      headerbar button.linked:active,
-      headerbar button.linked:checked,
-      headerbar button.flat:active,
-      headerbar button.flat:checked {
+      .titlebar:not(headerbar) button.back-button:active, .titlebar:not(headerbar) button.back-button:checked, .titlebar:not(headerbar) button.suggested-action:active, .titlebar:not(headerbar) button.suggested-action:checked, .titlebar:not(headerbar) button.menu-button:active, .titlebar:not(headerbar) button.menu-button:checked, .titlebar:not(headerbar) button.text-button:active, .titlebar:not(headerbar) button.text-button:checked, .titlebar:not(headerbar) button.image-button:active, .titlebar:not(headerbar) button.image-button:checked, .titlebar:not(headerbar) button.linked:active, .titlebar:not(headerbar) button.linked:checked, .titlebar:not(headerbar) button.flat:active, .titlebar:not(headerbar) button.flat:checked, headerbar button.back-button:active, headerbar button.back-button:checked, headerbar button.suggested-action:active, headerbar button.suggested-action:checked, headerbar button.menu-button:active, headerbar button.menu-button:checked, headerbar button.text-button:active, headerbar button.text-button:checked, headerbar button.image-button:active, headerbar button.image-button:checked, headerbar button.linked:active, headerbar button.linked:checked, headerbar button.flat:active, headerbar button.flat:checked {
         border-radius: 0px; }
-      .titlebar:not(headerbar) button.back-button:backdrop, .titlebar:not(headerbar) button.suggested-action:backdrop, .titlebar:not(headerbar) button.menu-button:backdrop, .titlebar:not(headerbar) button.text-button:backdrop, .titlebar:not(headerbar) button.image-button:backdrop, .titlebar:not(headerbar) button.linked:backdrop, .titlebar:not(headerbar) button.flat:backdrop,
-      headerbar button.back-button:backdrop,
-      headerbar button.suggested-action:backdrop,
-      headerbar button.menu-button:backdrop,
-      headerbar button.text-button:backdrop,
-      headerbar button.image-button:backdrop,
-      headerbar button.linked:backdrop,
-      headerbar button.flat:backdrop {
+      .titlebar:not(headerbar) button.back-button:backdrop, .titlebar:not(headerbar) button.suggested-action:backdrop, .titlebar:not(headerbar) button.menu-button:backdrop, .titlebar:not(headerbar) button.text-button:backdrop, .titlebar:not(headerbar) button.image-button:backdrop, .titlebar:not(headerbar) button.linked:backdrop, .titlebar:not(headerbar) button.flat:backdrop, headerbar button.back-button:backdrop, headerbar button.suggested-action:backdrop, headerbar button.menu-button:backdrop, headerbar button.text-button:backdrop, headerbar button.image-button:backdrop, headerbar button.linked:backdrop, headerbar button.flat:backdrop {
         background-color: transparent;
         background-image: none;
         text-shadow: none;
         color: rgba(255, 255, 255, 0.6); }
-      .titlebar:not(headerbar) button.back-button:hover, .titlebar:not(headerbar) button.suggested-action:hover, .titlebar:not(headerbar) button.menu-button:hover, .titlebar:not(headerbar) button.text-button:hover, .titlebar:not(headerbar) button.image-button:hover, .titlebar:not(headerbar) button.linked:hover, .titlebar:not(headerbar) button.flat:hover,
-      headerbar button.back-button:hover,
-      headerbar button.suggested-action:hover,
-      headerbar button.menu-button:hover,
-      headerbar button.text-button:hover,
-      headerbar button.image-button:hover,
-      headerbar button.linked:hover,
-      headerbar button.flat:hover {
+      .titlebar:not(headerbar) button.back-button:hover, .titlebar:not(headerbar) button.suggested-action:hover, .titlebar:not(headerbar) button.menu-button:hover, .titlebar:not(headerbar) button.text-button:hover, .titlebar:not(headerbar) button.image-button:hover, .titlebar:not(headerbar) button.linked:hover, .titlebar:not(headerbar) button.flat:hover, headerbar button.back-button:hover, headerbar button.suggested-action:hover, headerbar button.menu-button:hover, headerbar button.text-button:hover, headerbar button.image-button:hover, headerbar button.linked:hover, headerbar button.flat:hover {
         background-image: none;
         background-color: rgba(0, 0, 0, 0.15);
         color: rgba(255, 255, 255, 0.8);
         box-shadow: none;
         text-shadow: none; }
-      .titlebar:not(headerbar) button.back-button.radio.text-button, .titlebar:not(headerbar) button.back-button.check.text-button, .titlebar:not(headerbar) button.suggested-action.radio.text-button, .titlebar:not(headerbar) button.suggested-action.check.text-button, .titlebar:not(headerbar) button.menu-button.radio.text-button, .titlebar:not(headerbar) button.menu-button.check.text-button, .titlebar:not(headerbar) button.text-button.radio.text-button, .titlebar:not(headerbar) button.text-button.check.text-button, .titlebar:not(headerbar) button.image-button.radio.text-button, .titlebar:not(headerbar) button.image-button.check.text-button, .titlebar:not(headerbar) button.linked.radio.text-button, .titlebar:not(headerbar) button.linked.check.text-button, .titlebar:not(headerbar) button.flat.radio.text-button, .titlebar:not(headerbar) button.flat.check.text-button,
-      headerbar button.back-button.radio.text-button,
-      headerbar button.back-button.check.text-button,
-      headerbar button.suggested-action.radio.text-button,
-      headerbar button.suggested-action.check.text-button,
-      headerbar button.menu-button.radio.text-button,
-      headerbar button.menu-button.check.text-button,
-      headerbar button.text-button.radio.text-button,
-      headerbar button.text-button.check.text-button,
-      headerbar button.image-button.radio.text-button,
-      headerbar button.image-button.check.text-button,
-      headerbar button.linked.radio.text-button,
-      headerbar button.linked.check.text-button,
-      headerbar button.flat.radio.text-button,
-      headerbar button.flat.check.text-button {
+      .titlebar:not(headerbar) button.back-button.radio.text-button, .titlebar:not(headerbar) button.back-button.check.text-button, .titlebar:not(headerbar) button.suggested-action.radio.text-button, .titlebar:not(headerbar) button.suggested-action.check.text-button, .titlebar:not(headerbar) button.menu-button.radio.text-button, .titlebar:not(headerbar) button.menu-button.check.text-button, .titlebar:not(headerbar) button.text-button.radio.text-button, .titlebar:not(headerbar) button.text-button.check.text-button, .titlebar:not(headerbar) button.image-button.radio.text-button, .titlebar:not(headerbar) button.image-button.check.text-button, .titlebar:not(headerbar) button.linked.radio.text-button, .titlebar:not(headerbar) button.linked.check.text-button, .titlebar:not(headerbar) button.flat.radio.text-button, .titlebar:not(headerbar) button.flat.check.text-button, headerbar button.back-button.radio.text-button, headerbar button.back-button.check.text-button, headerbar button.suggested-action.radio.text-button, headerbar button.suggested-action.check.text-button, headerbar button.menu-button.radio.text-button, headerbar button.menu-button.check.text-button, headerbar button.text-button.radio.text-button, headerbar button.text-button.check.text-button, headerbar button.image-button.radio.text-button, headerbar button.image-button.check.text-button, headerbar button.linked.radio.text-button, headerbar button.linked.check.text-button, headerbar button.flat.radio.text-button, headerbar button.flat.check.text-button {
         padding: 10px; }
     .titlebar:not(headerbar) button label,
-    .titlebar:not(headerbar) button image,
-    headerbar button label,
+    .titlebar:not(headerbar) button image, headerbar button label,
     headerbar button image {
       color: rgba(255, 255, 255, 0.8); }
       .titlebar:not(headerbar) button label:backdrop, .titlebar:not(headerbar) button label:disabled,
       .titlebar:not(headerbar) button image:backdrop,
-      .titlebar:not(headerbar) button image:disabled,
-      headerbar button label:backdrop,
-      headerbar button label:disabled,
+      .titlebar:not(headerbar) button image:disabled, headerbar button label:backdrop, headerbar button label:disabled,
       headerbar button image:backdrop,
       headerbar button image:disabled {
         color: rgba(255, 255, 255, 0.6);
         -gtk-icon-effect: dim; }
-    .titlebar:not(headerbar) button:focus, .titlebar:not(headerbar) button:hover,
-    headerbar button:focus,
-    headerbar button:hover {
+    .titlebar:not(headerbar) button:focus, .titlebar:not(headerbar) button:hover, headerbar button:focus, headerbar button:hover {
       background-image: none;
       background-color: rgba(0, 0, 0, 0.15);
       color: rgba(255, 255, 255, 0.8);
       box-shadow: none;
       text-shadow: none; }
-    .titlebar:not(headerbar) button:backdrop,
-    headerbar button:backdrop {
+    .titlebar:not(headerbar) button:backdrop, headerbar button:backdrop {
       background-color: transparent;
       background-image: none;
       color: rgba(255, 255, 255, 0.6); }
-      .titlebar:not(headerbar) button:backdrop image,
-      headerbar button:backdrop image {
+      .titlebar:not(headerbar) button:backdrop image, headerbar button:backdrop image {
         color: rgba(255, 255, 255, 0.6); }
-    .titlebar:not(headerbar) button:active, .titlebar:not(headerbar) button:checked,
-    headerbar button:active,
-    headerbar button:checked {
+    .titlebar:not(headerbar) button:active, .titlebar:not(headerbar) button:checked, headerbar button:active, headerbar button:checked {
       border-radius: 0px;
       text-shadow: none;
       -gtk-icon-shadow: none;
@@ -3098,46 +2850,31 @@ headerbar {
       background-color: transparent;
       background-image: none;
       color: rgba(255, 255, 255, 0.8); }
-      .titlebar:not(headerbar) button:active:backdrop, .titlebar:not(headerbar) button:checked:backdrop,
-      headerbar button:active:backdrop,
-      headerbar button:checked:backdrop {
+      .titlebar:not(headerbar) button:active:backdrop, .titlebar:not(headerbar) button:checked:backdrop, headerbar button:active:backdrop, headerbar button:checked:backdrop {
         background-color: transparent;
         background-image: none;
         color: rgba(255, 255, 255, 0.6);
         box-shadow: inset 0 -2px 0 0 rgba(255, 255, 255, 0.6); }
-      .titlebar:not(headerbar) button:active:focus, .titlebar:not(headerbar) button:active:hover, .titlebar:not(headerbar) button:checked:focus, .titlebar:not(headerbar) button:checked:hover,
-      headerbar button:active:focus,
-      headerbar button:active:hover,
-      headerbar button:checked:focus,
-      headerbar button:checked:hover {
+      .titlebar:not(headerbar) button:active:focus, .titlebar:not(headerbar) button:active:hover, .titlebar:not(headerbar) button:checked:focus, .titlebar:not(headerbar) button:checked:hover, headerbar button:active:focus, headerbar button:active:hover, headerbar button:checked:focus, headerbar button:checked:hover {
         background-image: none;
         background-color: rgba(0, 0, 0, 0.15);
         color: rgba(255, 255, 255, 0.8);
         box-shadow: inset 0 -2px 0 0 rgba(255, 255, 255, 0.8); }
-    .titlebar:not(headerbar) button:disabled, .titlebar:not(headerbar) button:disabled:backdrop,
-    headerbar button:disabled,
-    headerbar button:disabled:backdrop {
+    .titlebar:not(headerbar) button:disabled, .titlebar:not(headerbar) button:disabled:backdrop, headerbar button:disabled, headerbar button:disabled:backdrop {
       color: rgba(255, 255, 255, 0.6);
       background-color: transparent;
       background-image: none; }
-      .titlebar:not(headerbar) button:disabled image, .titlebar:not(headerbar) button:disabled:backdrop image,
-      headerbar button:disabled image,
-      headerbar button:disabled:backdrop image {
+      .titlebar:not(headerbar) button:disabled image, .titlebar:not(headerbar) button:disabled:backdrop image, headerbar button:disabled image, headerbar button:disabled:backdrop image {
         -gtk-icon-effect: dim; }
-    .titlebar:not(headerbar) button.menu-button .menu .menuitem label,
-    headerbar button.menu-button .menu .menuitem label {
+    .titlebar:not(headerbar) button.menu-button .menu .menuitem label, headerbar button.menu-button .menu .menuitem label {
       color: #cfd8dc; }
-      .titlebar:not(headerbar) button.menu-button .menu .menuitem label:disabled,
-      headerbar button.menu-button .menu .menuitem label:disabled {
+      .titlebar:not(headerbar) button.menu-button .menu .menuitem label:disabled, headerbar button.menu-button .menu .menuitem label:disabled {
         color: #839096; }
-    .titlebar:not(headerbar) button.menu-button .menu .menuitem .separator,
-    headerbar button.menu-button .menu .menuitem .separator {
+    .titlebar:not(headerbar) button.menu-button .menu .menuitem .separator, headerbar button.menu-button .menu .menuitem .separator {
       color: #222c31; }
-    .titlebar:not(headerbar) button.menu-button .menu .menuitem:hover label,
-    headerbar button.menu-button .menu .menuitem:hover label {
+    .titlebar:not(headerbar) button.menu-button .menu .menuitem:hover label, headerbar button.menu-button .menu .menuitem:hover label {
       color: #ffffff; }
-    .titlebar:not(headerbar) button.suggested-action,
-    headerbar button.suggested-action {
+    .titlebar:not(headerbar) button.suggested-action, headerbar button.suggested-action {
       font-weight: bold;
       padding: 0;
       padding: 5px 10px;
@@ -3145,50 +2882,36 @@ headerbar {
       background-color: rgba(255, 255, 255, 0.8);
       color: #2196f3;
       box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.2); }
-      .titlebar:not(headerbar) button.suggested-action label,
-      headerbar button.suggested-action label {
+      .titlebar:not(headerbar) button.suggested-action label, headerbar button.suggested-action label {
         color: #2196f3; }
-      .titlebar:not(headerbar) button.suggested-action:hover,
-      headerbar button.suggested-action:hover {
+      .titlebar:not(headerbar) button.suggested-action:hover, headerbar button.suggested-action:hover {
         background-color: rgba(255, 255, 255, 0.8);
         box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.4); }
-        .titlebar:not(headerbar) button.suggested-action:hover label,
-        headerbar button.suggested-action:hover label {
+        .titlebar:not(headerbar) button.suggested-action:hover label, headerbar button.suggested-action:hover label {
           color: #2196f3; }
-        .titlebar:not(headerbar) button.suggested-action:hover:backdrop,
-        headerbar button.suggested-action:hover:backdrop {
+        .titlebar:not(headerbar) button.suggested-action:hover:backdrop, headerbar button.suggested-action:hover:backdrop {
           background-color: rgba(255, 255, 255, 0.6);
           box-shadow: none; }
-          .titlebar:not(headerbar) button.suggested-action:hover:backdrop label,
-          headerbar button.suggested-action:hover:backdrop label {
+          .titlebar:not(headerbar) button.suggested-action:hover:backdrop label, headerbar button.suggested-action:hover:backdrop label {
             color: rgba(33, 150, 243, 0.8); }
-      .titlebar:not(headerbar) button.suggested-action:disabled,
-      headerbar button.suggested-action:disabled {
+      .titlebar:not(headerbar) button.suggested-action:disabled, headerbar button.suggested-action:disabled {
         background-color: rgba(0, 0, 0, 0.1);
         box-shadow: none; }
-        .titlebar:not(headerbar) button.suggested-action:disabled label,
-        headerbar button.suggested-action:disabled label {
+        .titlebar:not(headerbar) button.suggested-action:disabled label, headerbar button.suggested-action:disabled label {
           color: rgba(255, 255, 255, 0.3); }
-        .titlebar:not(headerbar) button.suggested-action:disabled:backdrop,
-        headerbar button.suggested-action:disabled:backdrop {
+        .titlebar:not(headerbar) button.suggested-action:disabled:backdrop, headerbar button.suggested-action:disabled:backdrop {
           background-color: rgba(0, 0, 0, 0.1);
           box-shadow: none; }
-          .titlebar:not(headerbar) button.suggested-action:disabled:backdrop label,
-          headerbar button.suggested-action:disabled:backdrop label {
+          .titlebar:not(headerbar) button.suggested-action:disabled:backdrop label, headerbar button.suggested-action:disabled:backdrop label {
             color: rgba(255, 255, 255, 0.3); }
-      .titlebar:not(headerbar) button.suggested-action:backdrop,
-      headerbar button.suggested-action:backdrop {
+      .titlebar:not(headerbar) button.suggested-action:backdrop, headerbar button.suggested-action:backdrop {
         background-color: rgba(255, 255, 255, 0);
         box-shadow: none; }
-        .titlebar:not(headerbar) button.suggested-action:backdrop label,
-        headerbar button.suggested-action:backdrop label {
+        .titlebar:not(headerbar) button.suggested-action:backdrop label, headerbar button.suggested-action:backdrop label {
           color: rgba(33, 150, 243, 0.2); }
-    .titlebar:not(headerbar) button.linked:first-child, .titlebar:not(headerbar) button.linked:last-child,
-    headerbar button.linked:first-child,
-    headerbar button.linked:last-child {
+    .titlebar:not(headerbar) button.linked:first-child, .titlebar:not(headerbar) button.linked:last-child, headerbar button.linked:first-child, headerbar button.linked:last-child {
       border-radius: 0; }
-    .titlebar:not(headerbar) button.titlebutton,
-    headerbar button.titlebutton {
+    .titlebar:not(headerbar) button.titlebutton, headerbar button.titlebutton {
       background-color: transparent;
       background-image: none;
       border-radius: 50%;
@@ -3199,25 +2922,20 @@ headerbar {
       padding: 1px;
       text-shadow: none;
       color: rgba(255, 255, 255, 0.8); }
-      .titlebar:not(headerbar) button.titlebutton:hover,
-      headerbar button.titlebutton:hover {
+      .titlebar:not(headerbar) button.titlebutton:hover, headerbar button.titlebutton:hover {
         background-color: rgba(255, 255, 255, 0);
         color: rgba(255, 255, 255, 0.8); }
-      .titlebar:not(headerbar) button.titlebutton:backdrop,
-      headerbar button.titlebutton:backdrop {
+      .titlebar:not(headerbar) button.titlebutton:backdrop, headerbar button.titlebutton:backdrop {
         background-color: transparent;
         color: rgba(255, 255, 255, 0.6); }
-      .titlebar:not(headerbar) button.titlebutton:active,
-      headerbar button.titlebutton:active {
+      .titlebar:not(headerbar) button.titlebutton:active, headerbar button.titlebutton:active {
         background-color: rgba(255, 255, 255, 0.8);
         color: #303f46;
         border-radius: 50%;
         box-shadow: none; }
-        .titlebar:not(headerbar) button.titlebutton:active GtkImage,
-        headerbar button.titlebutton:active GtkImage {
+        .titlebar:not(headerbar) button.titlebutton:active GtkImage, headerbar button.titlebutton:active GtkImage {
           color: #303f46; }
-  .titlebar:not(headerbar) .separator,
-  headerbar .separator {
+  .titlebar:not(headerbar) .separator, headerbar .separator {
     color: transparent;
     background-color: transparent; }
 
@@ -7281,8 +6999,8 @@ ConversationListView {
   outline-color: rgba(207, 216, 220, 0.3);
   border-color: #222c31;
   background-image: linear-gradient(to bottom, #37474f, #2d3940);
-  text-shadow: 0 1px rgba(0, 0, 0, 0.7898);
-  -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.7898);
+  text-shadow: 0 1px rgba(0, 0, 0, 0.7898039216);
+  -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.7898039216);
   box-shadow: inset 0 1px rgba(255, 255, 255, 0.05);
   box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.05); }
   #content_frame button:hover {
@@ -7290,16 +7008,16 @@ ConversationListView {
     outline-color: rgba(207, 216, 220, 0.3);
     border-color: #222c31;
     background-image: linear-gradient(to bottom, #394a52, #334249 60%, #2f3c43);
-    text-shadow: 0 1px rgba(0, 0, 0, 0.7418);
-    -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.7418);
+    text-shadow: 0 1px rgba(0, 0, 0, 0.7418039216);
+    -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.7418039216);
     box-shadow: inset 0 1px rgba(255, 255, 255, 0.05); }
   #content_frame button:active, #content_frame button:checked {
     color: #cfd8dc;
     outline-color: rgba(207, 216, 220, 0.3);
     border-color: #222c31;
     background-image: linear-gradient(to bottom, #28343a, #334249);
-    text-shadow: 0 1px rgba(0, 0, 0, 0.8698);
-    -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.8698);
+    text-shadow: 0 1px rgba(0, 0, 0, 0.8698039216);
+    -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.8698039216);
     box-shadow: inset 0 2px 1px -2px rgba(0, 0, 0, 0.6);
     box-shadow: inset 0 1px 1px 0 rgba(0, 0, 0, 0.05), 0 1px 0 0 rgba(255, 255, 255, 0.05); }
   #content_frame button:disabled {
@@ -7374,3 +7092,5 @@ ConversationListView {
 #greeter_infobar {
   border-bottom-width: 0;
   font-weight: bold; }
+
+/*# sourceMappingURL=gtk-dark.css.map */
